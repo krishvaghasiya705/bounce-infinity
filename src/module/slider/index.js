@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Slider from "react-slick";
 import "./slider.scss";
 import "slick-carousel/slick/slick.scss";
 import "slick-carousel/slick/slick-theme.scss";
 import person from "../../assets/image/person.png";
-export default function Slide() {
 
+export default function Slide() {
     const settings = {
         dots: true,
         infinite: true,
@@ -56,46 +56,3 @@ export default function Slide() {
         </div>
     )
 }
-
-
-const ReadMore = ({ text, linesToShow }) => {
-    const [isExpanded, setIsExpanded] = useState(false);
-    const [showAll, setShowAll] = useState(false);
-  
-    const toggleReadMore = () => {
-      setIsExpanded(!isExpanded);
-    };
-  
-    const handleClick = () => {
-      setShowAll(!showAll);
-    };
-  
-    const renderText = () => {
-      if (isExpanded || showAll) {
-        return text.split('\n').map((line, index) => (
-          <span key={index} className="read-more-line">
-            {line}
-            <br />
-          </span>
-        ));
-      } else {
-        return text.split('\n').slice(0, linesToShow).map((line, index) => (
-          <span key={index} className="read-more-line">
-            {line}
-            <br />
-          </span>
-        ));
-      }
-    };
-  
-    return (
-      <div className="read-more-container">
-        {renderText()}
-        {text.split('\n').length > linesToShow && (
-          <button onClick={handleClick} className="read-more-button">
-            {showAll ? 'Read Less' : 'Read More'}
-          </button>
-        )}
-      </div>
-    );
-  };

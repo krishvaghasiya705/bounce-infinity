@@ -10,7 +10,7 @@ import vectorthree from "../../assets/image/vector3.png";
 import vectorfour from "../../assets/image/Vector4.png";
 import prdprzone from "../../assets/cardimage/Limited Edition Sparkle Black r-l 1.png";
 import prdprztwo from "../../assets/cardimage/E1 SPORTY RED 3.png";
-import prdprzthree from "../../assets/cardimage/E1+ ROCK GREY.png";
+import prdprzthreee from "../../assets/cardimage/E1+ ROCK GREY.png";
 import rupees from "../../assets/cardimage/Vector.png";
 import redscooter from "../../assets/pricingimage/redscooter.png";
 import rightarrow from "../../assets/image/rightarrow.png";
@@ -327,7 +327,7 @@ export default function Home() {
               </div>
 
               <div className="product-prize-card-one">
-                <img src={prdprzthree} alt="prdprzthree" />
+                <img src={prdprzthreee} alt="prdprzthreee" />
                 <div className="product-prize-card">
                   <h1><img src={rupees} alt="rupees" /> 1,08,064</h1>
                   <h2>E1LE</h2>
