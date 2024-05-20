@@ -12,6 +12,7 @@ import Socialmediadetails from "../module/socialmediadetails";
 import Contact from "../module/contactus";
 import Pricing from "../module/pricing";
 import Accordian from "../module/question";
+import Banglore from "../module/banglore";
 
 const router = createBrowserRouter([
     {
@@ -67,6 +68,10 @@ const router = createBrowserRouter([
     {
         path: "/Accordian",
         element: <Accordian/>
+    },
+    {
+        path: "/Banglore",
+        element: <Banglore />
     }
 ])
 

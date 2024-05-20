@@ -400,9 +400,9 @@ p {
             .product-type-box-one {
                 display: flex;
                 flex-direction: column;
-                gap: 40px;
+                gap: 20px;
 
-                button {
+                :nth-child(3n + 1) {
                     background: #363638;
                     border: none;
                     border-radius: 6px;
@@ -418,12 +418,27 @@ p {
                     cursor: pointer;
                 }
 
-                p {
+                button {
                     color: #282828;
+                    background: transparent;
                     text-align: center;
                     font-size: 20px;
                     font-weight: 700;
                     font-family: "Montserrat", sans-serif;
+                    border: none;
+                    border-radius: 6px;
+                    height: 54px;
+                    width: 70px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: .5s ease-in-out;
+
+                    &:hover {
+                        transition: .5s ease-in-out;
+                        background: #363638;
+                        color: #FFFFFF;
+                    }
                 }
             }
 

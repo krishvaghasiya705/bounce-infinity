@@ -386,9 +386,9 @@ p {
 .our-product-div-main .prodduct-scooter-image-div-main .product-type-box-side-main .product-type-box-one {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
 }
-.our-product-div-main .prodduct-scooter-image-div-main .product-type-box-side-main .product-type-box-one button {
+.our-product-div-main .prodduct-scooter-image-div-main .product-type-box-side-main .product-type-box-one :nth-child(3n+1) {
   background: #363638;
   border: none;
   border-radius: 6px;
@@ -403,12 +403,26 @@ p {
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
 }
-.our-product-div-main .prodduct-scooter-image-div-main .product-type-box-side-main .product-type-box-one p {
+.our-product-div-main .prodduct-scooter-image-div-main .product-type-box-side-main .product-type-box-one button {
   color: #282828;
+  background: transparent;
   text-align: center;
   font-size: 20px;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
+  border: none;
+  border-radius: 6px;
+  height: 54px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+}
+.our-product-div-main .prodduct-scooter-image-div-main .product-type-box-side-main .product-type-box-one button:hover {
+  transition: 0.5s ease-in-out;
+  background: #363638;
+  color: #FFFFFF;
 }
 .our-product-div-main .prodduct-scooter-image-div-main .product-type-box-side-main .product-type-box-two {
   display: flex;

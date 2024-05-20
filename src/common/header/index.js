@@ -43,7 +43,7 @@ export default function Header() {
                             </div>
                             <div className="header-contant-menu">
                                 <div className="header-contant-menu-ancer">
-                                    <Link to="/" className={location.pathname === '/' ? 'active' : ''}>
+                                    <Link to="/" className={location.pathname === '/' || location.pathname === '/Banglore' ? 'active' : ''}>
                                         <p>Home</p>
                                         <div className="hover-brd-cls"></div>
                                     </Link>
@@ -96,10 +96,10 @@ export default function Header() {
                                     </Link>
                                 </div>
                                 <div className="header-contant-menu-ancer">
-                                <Link to={"/Pricing"}>
-                                    <p>Pricing</p>
-                                    <div className="hover-brd-cls"></div>
-                                </Link>
+                                    <Link to={"/Pricing"}>
+                                        <p>Pricing</p>
+                                        <div className="hover-brd-cls"></div>
+                                    </Link>
                                 </div>
                                 <div className="header-contant-menu-ancer">
                                     <Link to={"/Contact"} className={location.pathname === '/Contact' ? 'active' : ''}>

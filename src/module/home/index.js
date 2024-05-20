@@ -23,7 +23,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.scss";
 import "slick-carousel/slick/slick-theme.scss";
 import rightarrowt from "../../assets/image/rightarrowt.png"
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // import { FaHome } from "react-icons/fa";
 
 
@@ -81,7 +81,7 @@ export default function Home() {
       currentIndex = (currentIndex + 1) % images.length;
     };
 
-    const interval = setInterval(changeImage, 1000);
+    const interval = setInterval(changeImage, 2000);
 
     return () => clearInterval(interval);
   }, []);
@@ -193,8 +193,8 @@ export default function Home() {
             <div className="product-type-box-side-main">
               <div className="product-type-box-one">
                 <button type='submit'>E1</button>
-                <p>E1+</p>
-                <p>E1LE</p>
+                <button type='submit'>E1+</button>
+                <button type='submit'>E1LE</button>
               </div>
               <div className="product-type-box-two">
                 <button type='button'>
@@ -304,8 +304,11 @@ export default function Home() {
               </div>
             </div>
             <div className="product-image-card-and-prize-card-main">
+
               <div className="product-prize-card-one">
-                <img src={prdprzone} alt="prdprzone" />
+                <Link to={"/Banglore"}>
+                  <img src={prdprzone} alt="prdprzone" />
+                </Link>
                 <div className="product-prize-card">
                   <h1><img src={rupees} alt="rupees" /> 1,08,064</h1>
                   <h2>E1LE</h2>
@@ -316,7 +319,9 @@ export default function Home() {
               </div>
 
               <div className="product-prize-card-one">
-                <img src={prdprztwo} alt="prdprztwo" />
+                <Link to={"/Banglore"}>
+                  <img src={prdprztwo} alt="prdprztwo" />
+                </Link>
                 <div className="product-prize-card">
                   <h1><img src={rupees} alt="rupees" /> 1,08,064</h1>
                   <h2>E1LE</h2>
@@ -327,7 +332,9 @@ export default function Home() {
               </div>
 
               <div className="product-prize-card-one">
-                <img src={prdprzthreee} alt="prdprzthreee" />
+                <Link to={"/Banglore"}>
+                  <img src={prdprzthreee} alt="prdprzthreee" />
+                </Link>
                 <div className="product-prize-card">
                   <h1><img src={rupees} alt="rupees" /> 1,08,064</h1>
                   <h2>E1LE</h2>
