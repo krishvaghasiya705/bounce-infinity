@@ -1,0 +1,1009 @@
+* {
+  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.herobanner-test-ride {
+  background-image: url("../../assets/testrideimage/testpageherobanner.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.herobanner-test-ride img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.book-ride-section-main {
+  position: relative;
+  z-index: 9;
+  margin: 80px 0 100px 0;
+}
+@media (max-width: 576px) {
+  .book-ride-section-main {
+    margin: -30px 0 100px 0;
+  }
+}
+.book-ride-section-main .book-ride-section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.book-ride-section-main .book-ride-section-container .book-ride-box-back-main {
+  background: linear-gradient(168.37deg, #FFE7CD 8.53%, #FCB9A2 96.91%);
+  width: calc(100% - 40px);
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.book-ride-section-main .book-ride-section-container .book-ride-box-back-main .book-test-ride-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 6px 0;
+}
+.book-ride-section-main .book-ride-section-container .book-ride-box-back-main .book-test-ride-title h1 {
+  color: #ef404a;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 41px;
+  font-family: "Montserrat", sans-serif;
+}
+.book-ride-section-main .book-ride-section-container .book-ride-box-back-main .experience-pera-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 22px 0;
+}
+.book-ride-section-main .book-ride-section-container .book-ride-box-back-main .experience-pera-main p {
+  color: #282828;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+.book-ride-section-main .book-ride-section-container .book-ride-box-back-main .test-ride-box-inner-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 0 22px 0;
+}
+.book-ride-section-main .book-ride-section-container .book-ride-box-back-main .test-ride-box-inner-input input {
+  width: 100%;
+  padding: 14px 39px;
+  border: none;
+  border-radius: 6px;
+  background-color: #FFF;
+  color: rgba(108, 108, 108, 0.7019607843);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+.book-ride-section-main .book-ride-section-container .book-ride-box-back-main .test-ride-box-inner-input input:focus {
+  outline: none;
+}
+.book-ride-section-main .book-ride-section-container .book-ride-box-back-main .test-ride-box-inner-input img {
+  position: absolute;
+  top: 14px;
+  left: 15px;
+}
+.book-ride-section-main .book-ride-section-container .book-ride-box-back-main .test-drive-loaction-boxes-main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 25px;
+}
+@media (max-width: 800px) {
+  .book-ride-section-main .book-ride-section-container .book-ride-box-back-main .test-drive-loaction-boxes-main {
+    flex-wrap: wrap;
+  }
+}
+.book-ride-section-main .book-ride-section-container .book-ride-box-back-main .test-drive-loaction-boxes-main button {
+  background: #FFF;
+  color: #282828;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  border-radius: 3px;
+  padding: 12px 14px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.book-ride-section-main .book-ride-section-container .book-ride-box-back-main .test-drive-loaction-boxes-main button:hover {
+  background: #282828;
+  color: #FFF;
+  transition: 0.5s ease-in-out;
+}
+
+.take-ride-box-main {
+  margin: 100px 0;
+}
+.take-ride-box-main .take-ride-container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.take-ride-box-main .take-ride-container .take-box-flexinner-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.take-ride-box-main .take-ride-container .take-box-flexinner-main .take-ride-title-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 8px 0;
+}
+.take-ride-box-main .take-ride-container .take-box-flexinner-main .take-ride-title-main h2 {
+  text-align: center;
+  color: #282828;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 41px;
+  font-family: "Montserrat", sans-serif;
+}
+.take-ride-box-main .take-ride-container .take-box-flexinner-main .take-ride-pera-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 35px 0;
+}
+.take-ride-box-main .take-ride-container .take-box-flexinner-main .take-ride-pera-main p {
+  text-align: center;
+  color: #6c6c6c;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  font-family: "Montserrat", sans-serif;
+}
+.take-ride-box-main .take-ride-container .take-box-flexinner-main .take-ride-button-two-button-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 40px;
+}
+@media (max-width: 800px) {
+  .take-ride-box-main .take-ride-container .take-box-flexinner-main .take-ride-button-two-button-main {
+    flex-wrap: wrap;
+  }
+}
+.take-ride-box-main .take-ride-container .take-box-flexinner-main .take-ride-button-two-button-main button {
+  padding: 16px 16px;
+  width: 328px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  font-family: "Montserrat", sans-serif;
+  background: rgba(40, 40, 40, 0.12);
+  color: #6c6c6c;
+  border: none;
+  border-radius: 6px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.take-ride-box-main .take-ride-container .take-box-flexinner-main .take-ride-button-two-button-main button:hover {
+  background: #ef404a;
+  color: #FFF;
+  transition: 0.5s ease-in-out;
+}
+.take-ride-box-main .take-ride-container .take-box-flexinner-main .take-ride-button-two-button-main button:nth-child(2n+2) {
+  background: rgba(40, 40, 40, 0.12);
+  color: #6c6c6c;
+  transition: 0.5s ease-in-out;
+}
+.take-ride-box-main .take-ride-container .take-box-flexinner-main .take-ride-button-two-button-main button:nth-child(2n+2):hover {
+  background: #ef404a;
+  color: #FFF;
+  transition: 0.5s ease-in-out;
+}
+
+.addresss-div-rsp-main {
+  display: none;
+  padding: 80px 0;
+  background: linear-gradient(0deg, #FFF1EB 0%, #ACE0F9 100%);
+}
+@media (max-width: 1024px) {
+  .addresss-div-rsp-main {
+    display: block;
+    margin: 0 0 100px 0;
+  }
+}
+@media (max-width: 576px) {
+  .addresss-div-rsp-main {
+    display: block;
+    margin: 0 0 25px 0;
+  }
+}
+.addresss-div-rsp-main .address-container {
+  max-width: 930px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.addresss-div-rsp-main .address-container .address-title-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 65px 0;
+}
+.addresss-div-rsp-main .address-container .address-title-main h1 {
+  padding: 0 0 10px 0;
+  border-bottom: 4px solid #ef404a;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 41px;
+  font-family: "Montserrat", sans-serif;
+}
+.addresss-div-rsp-main .address-container .adddress-input-section-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 59px;
+  margin: 0 0 50px 0;
+}
+@media (max-width: 576px) {
+  .addresss-div-rsp-main .address-container .adddress-input-section-main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.addresss-div-rsp-main .address-container .adddress-input-section-main .address-input-box-one h2 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21px;
+  font-family: "Montserrat", sans-serif;
+  color: #282828;
+  margin: 0 0 10px 0;
+}
+.addresss-div-rsp-main .address-container .adddress-input-section-main .address-input-box-one input {
+  padding: 18px;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  font-family: "Montserrat", sans-serif;
+  width: calc(100% - 36px);
+}
+.addresss-div-rsp-main .address-container .adddress-input-section-main .address-input-box-one input:focus {
+  outline: none;
+}
+.addresss-div-rsp-main .address-container .adddress-input-section-main .address-input-box-one input::-moz-placeholder {
+  color: #6c6c6c;
+}
+.addresss-div-rsp-main .address-container .adddress-input-section-main .address-input-box-one input::placeholder {
+  color: #6c6c6c;
+}
+.addresss-div-rsp-main .address-container .done-button-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addresss-div-rsp-main .address-container .done-button-main button {
+  border: none;
+  border-radius: 4px;
+  background: #ef404a;
+  color: #FFFFFF;
+  padding: 15px;
+  width: 310px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.dealer-ship-selction-section-main {
+  background: linear-gradient(315deg, rgba(226, 209, 195, 0.9) 0%, rgba(253, 252, 251, 0.9) 100%);
+  padding: 80px 0;
+  margin: 0 0 100px 0;
+}
+@media (max-width: 576px) {
+  .dealer-ship-selction-section-main {
+    padding: 80px 0 22px 0;
+  }
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-box-title-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 60px 0;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-box-title-main h3 {
+  color: #282828;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 41px;
+  font-family: "Montserrat", sans-serif;
+  padding: 0 0 10px 0;
+  border-bottom: 4px solid #ef404a;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+}
+@media (max-width: 576px) {
+  .dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one {
+  padding: 20px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one .dealer-title-flx-main {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 10px 0;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one .dealer-title-flx-main h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: "Montserrat", sans-serif;
+  max-width: 384px;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one .dealer-title-flx-main img {
+  width: 20px;
+  height: 16px;
+  display: block;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one .dealer-title-flx-main .side-hv {
+  display: none;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one .dealer-title-flx-main .side-hv img {
+  width: 20px;
+  height: 16px;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one .location-dealer-flx-main {
+  display: flex;
+  gap: 12px;
+  margin: 0 0 10px 0;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one .location-dealer-flx-main img {
+  width: 12px;
+  height: 16px;
+  display: block;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one .location-dealer-flx-main .loc-hv {
+  display: none;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one .location-dealer-flx-main .loc-hv img {
+  width: 12px;
+  height: 16px;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one .location-dealer-flx-main p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one .phone-dealer-ship-flx-main {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one .phone-dealer-ship-flx-main img {
+  width: 13px;
+  height: 13px;
+  display: block;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one .phone-dealer-ship-flx-main .phon-hv {
+  display: none;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one .phone-dealer-ship-flx-main .phon-hv img {
+  width: 13px;
+  height: 13px;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one .phone-dealer-ship-flx-main span {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one:nth-child(6n+5) {
+  display: block;
+}
+@media (max-width: 576px) {
+  .dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one:nth-child(6n+5) {
+    display: none;
+  }
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one:nth-child(6n+6) {
+  display: block;
+}
+@media (max-width: 576px) {
+  .dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one:nth-child(6n+6) {
+    display: none;
+  }
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one:hover {
+  padding: 20px;
+  background: #ef404a;
+  border-radius: 6px;
+  border: none;
+  color: #FFF;
+  transition: 0.5s ease-in-out;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one:hover .dealer-title-flx-main {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 10px 0;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one:hover .dealer-title-flx-main h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: "Montserrat", sans-serif;
+  max-width: 384px;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one:hover .dealer-title-flx-main img {
+  width: 20px;
+  height: 16px;
+  display: none;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one:hover .dealer-title-flx-main .side-hv {
+  display: block;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one:hover .dealer-title-flx-main .side-hv img {
+  width: 20px;
+  height: 16px;
+  display: block;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one:hover .location-dealer-flx-main {
+  display: flex;
+  gap: 12px;
+  margin: 0 0 10px 0;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one:hover .location-dealer-flx-main img {
+  width: 12px;
+  height: 16px;
+  display: none;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one:hover .location-dealer-flx-main .loc-hv {
+  display: block;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one:hover .location-dealer-flx-main .loc-hv img {
+  width: 12px;
+  height: 16px;
+  display: block;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one:hover .location-dealer-flx-main p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one:hover .phone-dealer-ship-flx-main {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one:hover .phone-dealer-ship-flx-main img {
+  width: 13px;
+  height: 13px;
+  display: none;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one:hover .phone-dealer-ship-flx-main .phon-hv {
+  display: block;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one:hover .phone-dealer-ship-flx-main .phon-hv img {
+  width: 13px;
+  height: 13px;
+  display: block;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one:hover .phone-dealer-ship-flx-main span {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one:hover:nth-child(6n+5) {
+  display: block;
+}
+@media (max-width: 576px) {
+  .dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one:hover:nth-child(6n+5) {
+    display: none;
+  }
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one:hover:nth-child(6n+6) {
+  display: block;
+}
+@media (max-width: 576px) {
+  .dealer-ship-selction-section-main .dealer-ship-selction-container .dealer-ship-selcetion-box-section-main .dealer-ship-box-one:hover:nth-child(6n+6) {
+    display: none;
+  }
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .show-more-nn {
+  display: none;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .show-more-nn .show-more-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 22px 0 0 0;
+}
+.dealer-ship-selction-section-main .dealer-ship-selction-container .show-more-nn .show-more-div a {
+  color: #FF0A0F;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 19px;
+  font-family: "Montserrat", sans-serif;
+}
+@media (max-width: 576px) {
+  .dealer-ship-selction-section-main .dealer-ship-selction-container .show-more-nn {
+    display: block;
+  }
+}
+
+.select-ride-main {
+  background: linear-gradient(0deg, #FFF1EB 0%, #ACE0F9 100%);
+  padding: 80px 0;
+}
+.select-ride-main .select-div-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.select-ride-main .select-div-container .slect-ride-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 65px 0;
+}
+.select-ride-main .select-div-container .slect-ride-title h5 {
+  padding: 0 0 10px 0;
+  border-bottom: 4px solid #ef404a;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 41px;
+  font-family: "Montserrat", sans-serif;
+  color: #282828;
+}
+.select-ride-main .select-div-container .date-section-div-main {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 25px;
+}
+@media (max-width: 800px) {
+  .select-ride-main .select-div-container .date-section-div-main {
+    flex-wrap: wrap;
+  }
+}
+.select-ride-main .select-div-container .date-section-div-main button {
+  background: #FFFFFF;
+  padding: 12px 14px;
+  width: 122px;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.select-ride-main .select-div-container .date-section-div-main button:hover {
+  background: #ef404a;
+  color: #FFFFFF;
+  transition: 0.5s ease-in-out;
+}
+.select-ride-main .select-div-container .date-section-div-main button h6 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 0 3px 0;
+}
+.select-ride-main .select-div-container .date-section-div-main button p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+.select-ride-main .select-div-container .date-section-div-main-two {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 25px;
+  margin: 25px 0 0 0;
+  text-align: left;
+}
+@media (max-width: 800px) {
+  .select-ride-main .select-div-container .date-section-div-main-two {
+    flex-wrap: wrap;
+  }
+}
+.select-ride-main .select-div-container .date-section-div-main-two button {
+  text-align: left;
+  background: #FFFFFF;
+  padding: 12px 14px;
+  width: 122px;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.select-ride-main .select-div-container .date-section-div-main-two button:hover {
+  background: #ef404a;
+  color: #FFFFFF;
+  transition: 0.5s ease-in-out;
+}
+.select-ride-main .select-div-container .date-section-div-main-two button h6 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 0 3px 0;
+}
+.select-ride-main .select-div-container .date-section-div-main-two button p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+.select-ride-main .select-div-container .slect-ride-date-border-one-main {
+  width: 100%;
+  height: 1px;
+  margin: 50px 0;
+  border-bottom: 1px solid #6c6c6c;
+}
+.select-ride-main .select-div-container .time-slot-title-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 25px 0;
+}
+.select-ride-main .select-div-container .time-slot-title-main h1 {
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+.select-ride-main .select-div-container .time-slot-button-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 30px;
+  padding: 0 0 50px 0;
+  border-bottom: 1px dashed #6c6c6c;
+}
+@media (max-width: 576px) {
+  .select-ride-main .select-div-container .time-slot-button-main {
+    flex-wrap: wrap;
+  }
+}
+.select-ride-main .select-div-container .time-slot-button-main button {
+  border: none;
+  border-radius: 4px;
+  background: #FFFFFF;
+  color: #000;
+  padding: 14px;
+  width: 210px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.select-ride-main .select-div-container .time-slot-button-main button:hover {
+  background: #ef404a;
+  color: #FFFFFF;
+  transition: 0.5s ease-in-out;
+}
+.select-ride-main .select-div-container .time-slot-button-main button h2 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+.select-ride-main .select-div-container .personal-details-section-main {
+  padding: 60px 0 40px 0;
+}
+.select-ride-main .select-div-container .personal-details-section-main .personal-details-container {
+  max-width: 930px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.select-ride-main .select-div-container .personal-details-section-main .personal-details-container .personal-details-title-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 55px 0;
+}
+.select-ride-main .select-div-container .personal-details-section-main .personal-details-container .personal-details-title-main h3 {
+  color: #000;
+  font-size: 34px;
+  line-height: 41px;
+  font-weight: 700;
+  padding: 0 0 10px 0;
+  border-bottom: 4px solid #ef404a;
+}
+.select-ride-main .select-div-container .personal-details-section-main .personal-details-container .personal-details-contact-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  align-items: center;
+  margin: 0 0 50px 0;
+}
+@media (max-width: 576px) {
+  .select-ride-main .select-div-container .personal-details-section-main .personal-details-container .personal-details-contact-main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.select-ride-main .select-div-container .personal-details-section-main .personal-details-container .personal-details-contact-main .input-box-one {
+  text-align: left;
+}
+.select-ride-main .select-div-container .personal-details-section-main .personal-details-container .personal-details-contact-main .input-box-one h4 {
+  margin: 0 0 10px 0;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  font-family: "Montserrat", sans-serif;
+}
+.select-ride-main .select-div-container .personal-details-section-main .personal-details-container .personal-details-contact-main .input-box-one input {
+  border: none;
+  border-radius: 4px;
+  background: #FFF;
+  width: calc(100% - 36px);
+  padding: 18px;
+  color: #000;
+}
+.select-ride-main .select-div-container .personal-details-section-main .personal-details-container .personal-details-contact-main .input-box-one input:focus {
+  outline: none;
+}
+.select-ride-main .select-div-container .personal-details-section-main .personal-details-container .personal-details-contact-main .input-box-one input::-moz-placeholder {
+  color: #6c6c6c;
+}
+.select-ride-main .select-div-container .personal-details-section-main .personal-details-container .personal-details-contact-main .input-box-one input::placeholder {
+  color: #6c6c6c;
+}
+.select-ride-main .select-div-container .personal-details-section-main .personal-details-container .personal-details-contact-main .input-box-sec {
+  text-align: left;
+}
+.select-ride-main .select-div-container .personal-details-section-main .personal-details-container .personal-details-contact-main .input-box-sec h4 {
+  margin: 0 0 10px 0;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  font-family: "Montserrat", sans-serif;
+}
+.select-ride-main .select-div-container .personal-details-section-main .personal-details-container .personal-details-contact-main .input-box-sec .input-box-two {
+  position: relative;
+}
+.select-ride-main .select-div-container .personal-details-section-main .personal-details-container .personal-details-contact-main .input-box-sec .input-box-two input {
+  border: none;
+  border-radius: 4px;
+  background: #FFF;
+  width: calc(100% - 18px - 58px);
+  padding: 18px 18px 18px 58px;
+  color: #000;
+}
+.select-ride-main .select-div-container .personal-details-section-main .personal-details-container .personal-details-contact-main .input-box-sec .input-box-two input:focus {
+  outline: none;
+}
+.select-ride-main .select-div-container .personal-details-section-main .personal-details-container .personal-details-contact-main .input-box-sec .input-box-two input::-moz-placeholder {
+  color: #6c6c6c;
+}
+.select-ride-main .select-div-container .personal-details-section-main .personal-details-container .personal-details-contact-main .input-box-sec .input-box-two input::placeholder {
+  color: #6c6c6c;
+}
+.select-ride-main .select-div-container .personal-details-section-main .personal-details-container .personal-details-contact-main .input-box-sec .input-box-two select {
+  position: absolute;
+  top: 18px;
+  left: 0;
+  border: none;
+  background: transparent;
+  padding: 0 7px 0 0;
+  border-right: 1px solid #6c6c6c;
+}
+.select-ride-main .select-div-container .personal-details-section-main .personal-details-container .personal-details-contact-main .input-box-sec .input-box-two select:focus {
+  outline: none;
+}
+.select-ride-main .select-div-container .personal-details-section-main .personal-details-container .book-test-ride-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.select-ride-main .select-div-container .personal-details-section-main .personal-details-container .book-test-ride-button button {
+  border: none;
+  border-radius: 4px;
+  background: #ef404a;
+  padding: 15px;
+  width: 310px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.select-ride-main .select-div-container .personal-details-section-main .personal-details-container .book-test-ride-button button:hover {
+  background: #FFF;
+  color: #ef404a;
+  transition: 0.5s ease-in-out;
+}
+.select-ride-main .personal-click-pera-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.select-ride-main .personal-click-pera-container .click-per-main {
+  display: flex;
+  gap: 5px;
+}
+.select-ride-main .personal-click-pera-container .click-per-main span {
+  height: 3px;
+  width: 3px;
+  background: #6c6c6c;
+  border: none;
+  border-radius: 50%;
+  margin: 10px 0 0 0;
+}
+.select-ride-main .personal-click-pera-container .click-per-main p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  font-family: "Montserrat", sans-serif;
+  color: #6c6c6c;
+}
+
+.faq-section-main {
+  margin: 100px 0;
+}
+.faq-section-main .faq-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.faq-section-main .faq-container .faq-title-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 68px 0;
+}
+.faq-section-main .faq-container .faq-title-main h1 {
+  font-size: 34px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #282828;
+  border-bottom: 4px solid #FF0A0F;
+  padding: 0 0 10px 0;
+}
+@media (max-width: 400px) {
+  .faq-section-main .faq-container .faq-title-main h1 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+.faq-section-main .accordian-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.faq-section-main .accordion-item {
+  background: #FFF;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 28px 24px 30px 24px;
+  border-radius: 12px;
+  margin: 0 0 24px 0;
+}
+.faq-section-main .accordion-item.open {
+  background: #FDECED;
+}
+.faq-section-main .accordion-item h3 {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+.faq-section-main .accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.faq-section-main .accordion-title.open {
+  background-color: #FDECED;
+  margin: 0 0 12px 18px;
+}
+.faq-section-main .accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.1s ease-out;
+}
+.faq-section-main .accordion-content.open {
+  max-height: 1000px;
+  transition: max-height 0.5s ease-in-out;
+  margin: 0;
+  position: relative;
+}
+.faq-section-main .accordion-content.open .accordion-content-side-line {
+  position: absolute;
+  z-index: 99;
+  top: -32px;
+  left: 0px;
+  display: block;
+  height: 88px;
+  width: 4px;
+  background: #FF0A0F;
+}
+.faq-section-main .accordion-content.open .accordion-content-side-line.open {
+  display: block;
+}
+.faq-section-main .accordion-content.open p {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  color: #6c6c6c;
+  max-width: 980px;
+  line-height: 19px;
+  margin: 0 0 0 18px;
+}
+.faq-section-main .icon {
+  width: 20px;
+  height: 20px;
+}
+.faq-section-main .icon.plus,
+.faq-section-main .icon.minus {
+  height: 16px;
+  width: 15px;
+  transition: 0.5s ease-in-out;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/image/plus.png");
+}
+.faq-section-main .icon.minus {
+  height: 15px;
+  width: 16px;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/image/minus.png");
+}/*# sourceMappingURL=testride.css.map */
