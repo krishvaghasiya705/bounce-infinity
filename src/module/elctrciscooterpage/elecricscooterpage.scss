@@ -609,7 +609,7 @@ p {
 
 
 
-.herobanner-banglore-main {
+.herobanner-electric-main {
     user-select: none;
     -webkit-user-select: none;
     position: relative;
@@ -618,7 +618,7 @@ p {
     margin: 0 0 81px 0;
     display: block;
 
-    @media (max-width:800px) {
+    @media (max-width:1024px) {
         display: none;
     }
 
@@ -628,12 +628,12 @@ p {
     }
 
     .herobanner-inner-main {
-        padding: 140px 0 0 0;
+        padding: 144px 0 0 0;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        height: calc(100% - 140px);
+        height: calc(100% - 149px);
         display: flex;
         justify-content: space-between;
 
@@ -651,12 +651,17 @@ p {
             height: 100%;
             padding: 0 0 0 120px;
 
+            @media (max-width:1400px) {
+                padding: 0 0 0 30px;
+            }
+
             @media (max-width:1024px) {
                 padding: 0 0 0 50px;
             }
 
             .scooter-first-div-main {
-                margin: 75px 0 0 0;
+                position: relative;
+                margin: 90px 0 0 0;
 
                 @media (max-width:1300px) {
                     margin: 50px 0 0 0;
@@ -747,55 +752,76 @@ p {
                     }
                 }
 
-                .herobanner-image-changer-button-main-div-sc {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 8px;
+                .herobanner-elec-page-button-main {
+                    position: absolute;
+                    bottom: 50px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 100%;
 
-                    button {
-                        background-color: #FFF;
-                        height: 10px;
-                        width: 10px;
-                        border: none;
-                        border-radius: 50%;
-                        cursor: pointer;
-                        transition: .5s ease-in-out;
-                    }
+                    .herobanner-image-changer-button-main-div-sc {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 8px;
 
-                    .active {
-                        width: 35px;
-                        height: 10px;
-                        border: none;
-                        border-radius: 10px;
-                        background-color: #EF404A;
-                        cursor: pointer;
-                        transition: .5s ease-in-out;
+                        button {
+                            background-color: #FFF;
+                            height: 10px;
+                            width: 10px;
+                            border: none;
+                            border-radius: 50%;
+                            cursor: pointer;
+                            transition: .5s ease-in-out;
+                            display: block;
+                        }
+
+                        .active {
+                            width: 35px;
+                            height: 10px;
+                            border: none;
+                            border-radius: 10px;
+                            background-color: #EF404A;
+                            cursor: pointer;
+                            transition: .5s ease-in-out;
+                        }
                     }
                 }
             }
 
-            .scooter-div-main {
-                margin: 0 0 19px 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-image: url("../../assets/bangaloreimage/Rectangle9.png");
-                background-repeat: no-repeat;
-                background-position: center center;
-                background-size: cover;
-                padding: 156px 76px 40px 76px;
+            .scooter-div-two-main {
                 width: 100%;
-                user-select: none;
+                height: 100%;
 
-                @media (max-width:800px) {
-                    padding: 107px 76px 40px 40px;
-                }
-
-                img {
-                    width: auto;
-                    height: 100%;
+                .scooter-div-main {
+                    margin: 0;
+                    display: block;
+                    background-image: url("../../assets/electricscooterimage/Rectangle9.png");
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                    padding: 0 70px 15px 88px;
+                    width: calc(100% - 158px);
+                    min-height: 513px;
                     user-select: none;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    @media (max-width:1200px) {
+                        min-height: 371px;
+                    }
+
+                    @media (max-width:800px) {
+                        padding: 0 40px 0 30px;
+                    }
+
+                    img {
+                        width: 100%;
+                        // height: 100%;
+                        user-select: none;
+                    }
                 }
             }
         }
@@ -807,15 +833,11 @@ p {
 
 
 
-.herobanner-banglore-mobile {
+.herobanner-elec-mobile {
     margin: 0 0 50px 0;
     display: none;
 
-    @media (max-width:800px) {
-        display: block;
-    }
-
-    @media (max-width:576px) {
+    @media (max-width:1024px) {
         display: block;
     }
 
@@ -1067,42 +1089,38 @@ p {
                         justify-content: center;
                         align-items: center;
 
-                        a {
-                            text-decoration: none;
+                        button {
+                            width: 338px;
+                            height: 52px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 8px;
+                            background: #EF404A;
+                            color: #FFF;
+                            font-size: 18px;
+                            font-weight: 600;
+                            line-height: 22px;
+                            font-family: "Montserrat", sans-serif;
+                            border: 1px solid #EF404A;
+                            transition: .5s ease-in-out;
 
-                            button {
-                                width: 338px;
-                                height: 52px;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                gap: 8px;
-                                background: #EF404A;
-                                color: #FFF;
-                                font-size: 18px;
-                                font-weight: 600;
-                                line-height: 22px;
-                                font-family: "Montserrat", sans-serif;
-                                border: 1px solid #EF404A;
+                            &:hover {
                                 transition: .5s ease-in-out;
-
-                                &:hover {
-                                    transition: .5s ease-in-out;
-                                    color: #EF404A;
-                                    background: #FFF;
-
-                                    span {
-                                        background-image: url("../../assets/bangaloreimage/readarrowtwo.png");
-                                        transition: .5s ease-in-out;
-                                    }
-                                }
+                                color: #EF404A;
+                                background: #FFF;
 
                                 span {
+                                    background-image: url("../../assets/bangaloreimage/readarrowtwo.png");
                                     transition: .5s ease-in-out;
-                                    background-image: url("../../assets/bangaloreimage/readarrow.png");
-                                    width: 30px;
-                                    height: 14px;
                                 }
+                            }
+
+                            span {
+                                transition: .5s ease-in-out;
+                                background-image: url("../../assets/bangaloreimage/readarrow.png");
+                                width: 30px;
+                                height: 14px;
                             }
                         }
                     }

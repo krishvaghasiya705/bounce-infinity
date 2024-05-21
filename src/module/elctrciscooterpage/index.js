@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import "./banglore.scss";
+import "./elecricscooterpage.scss";
 import { useLocation } from 'react-router-dom';
-import logo from "../../assets/bangaloreimage/logofooter.png"
+import logo from "../../assets/electricscooterimage/logofooter.png"
 import { IoChevronDown } from "react-icons/io5";
 import hamburger from "../../assets/headerimage/hamburger.png";
 import mobilelogo from "../../assets/headerimage/headerlogo2.png";
@@ -11,10 +11,10 @@ import locationf from "../../assets/footerimage/location.png";
 import phone from "../../assets/footerimage/telephone.png";
 import mail from "../../assets/footerimage/email.png";
 import copyright from "../../assets/footerimage/copyright.png";
-import herobannerbanglore from "../../assets/bangaloreimage/herobanner.png";
-import scootyone from "../../assets/bangaloreimage/e1red.png";
-import scootytwo from "../../assets/bangaloreimage/e1grey.png";
-import scootythree from "../../assets/bangaloreimage/e1black.png";
+import herobannerscooter from "../../assets/electricscooterimage/Group 239295.png";
+import scootyone from "../../assets/electricscooterimage/E1 SPORTY RED 3.png";
+import scootytwo from "../../assets/electricscooterimage/E1+ SERENE GREEN 1.png";
+import scootythree from "../../assets/electricscooterimage/E1+ ROCK GREY.png";
 import E1scootyone from "../../assets/bangaloreimage/E1scootyone.png";
 import E1scootytwo from "../../assets/bangaloreimage/E2scootytwo.png";
 import E1scootythree from "../../assets/bangaloreimage/E3scoothree.png";
@@ -54,7 +54,7 @@ function Accordion({ items }) {
 
 
 
-export default function Banglore() {
+export default function Electricscooter() {
 
     const topRef = useRef(null);
 
@@ -126,7 +126,7 @@ export default function Banglore() {
                             </div>
                             <div className="header-contant-menu">
                                 <div className="header-contant-menu-ancer">
-                                    <Link to="/" className={location.pathname === '/' || location.pathname === '/Banglore' ? 'active' : ''}>
+                                    <Link to="/" className={location.pathname === '/' || location.pathname === '/Banglore' || location.pathname === '/Electricscooter' ? 'active' : ''}>
                                         <p>Home</p>
                                         <div className="hover-brd-cls"></div>
                                     </Link>
@@ -258,27 +258,31 @@ export default function Banglore() {
 
 
 
-            <div className="herobanner-banglore-main">
-                <img src={herobannerbanglore} alt="herobannerbanglore" />
+            <div className="herobanner-electric-main">
+                <img src={herobannerscooter} alt="herobannerscooter" />
                 <div className="herobanner-inner-main">
                     <div className="herobanner-inner-main-insc">
                         <div className="scooter-first-div-main">
                             <div className="banglore-electric-titl-main">
-                                <h1>Electric Scooters in Bangalore</h1>
+                                <h1>Top Electric Scooter Under 1 Lakh</h1>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum.</p>
                                 <div className="book-now-button-banglore">
                                     <button type="button">Book Now</button>
                                 </div>
                             </div>
-                            <div className="herobanner-image-changer-button-main-div-sc">
-                                <button onClick={() => handleImageChange(scootyone)} type="button" className={currentImage === scootyone ? 'active' : ''}></button>
-                                <button onClick={() => handleImageChange(scootytwo)} type="button" className={currentImage === scootytwo ? 'active' : ''}></button>
-                                <button onClick={() => handleImageChange(scootythree)} type="button" className={currentImage === scootythree ? 'active' : ''}></button>
+                            <div className="herobanner-elec-page-button-main">
+                                <div className="herobanner-image-changer-button-main-div-sc">
+                                    <button onClick={() => handleImageChange(scootyone)} type="button" className={currentImage === scootyone ? 'active' : ''}></button>
+                                    <button onClick={() => handleImageChange(scootytwo)} type="button" className={currentImage === scootytwo ? 'active' : ''}></button>
+                                    <button onClick={() => handleImageChange(scootythree)} type="button" className={currentImage === scootythree ? 'active' : ''}></button>
+                                </div>
                             </div>
                         </div>
 
-                        <div className="scooter-div-main">
-                            <img src={currentImage} alt="scooter" />
+                        <div className="scooter-div-two-main">
+                            <div className="scooter-div-main">
+                                <img src={currentImage} alt="scooter" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -286,11 +290,11 @@ export default function Banglore() {
 
 
 
-            <div className="herobanner-banglore-mobile">
+            <div className="herobanner-elec-mobile">
                 <div className="herobanner-mobile-main">
                     <div>
                         <div className="bounce-title-div-main">
-                            <h1>Electric Scooters in Bangalore</h1>
+                            <h1>Top Electric Scooter Under 1 Lakh</h1>
                         </div>
                         <div className="bounce-pera-div-main">
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum.</p>
@@ -337,7 +341,7 @@ export default function Banglore() {
                                 <h6>Price</h6>
                                 <p>₹1,08,064</p>
                                 <div className="read-more-button">
-                                    <Link to="/Electricscooter"><button type="button">Read More <span></span></button></Link>
+                                    <button type="button">Read More <span></span></button>
                                 </div>
                             </div>
                         </div>
@@ -355,7 +359,7 @@ export default function Banglore() {
                                 <h6>Price</h6>
                                 <p>₹1,04,999</p>
                                 <div className="read-more-button">
-                                    <Link to="/Electricscooter"><button type="button">Read More <span></span></button></Link>
+                                    <button type="button">Read More <span></span></button>
                                 </div>
                             </div>
                         </div>
@@ -373,7 +377,7 @@ export default function Banglore() {
                                 <h6>Price</h6>
                                 <p>₹89,999</p>
                                 <div className="read-more-button">
-                                    <Link to="/Electricscooter"><button type="button">Read More <span></span></button></Link>
+                                    <button type="button">Read More <span></span></button>
                                 </div>
                             </div>
                         </div>

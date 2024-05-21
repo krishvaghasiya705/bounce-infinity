@@ -13,7 +13,7 @@ import { IoChevronDown } from "react-icons/io5";
 import hamburger from "../../assets/headerimage/hamburger.png";
 import mobilelogo from "../../assets/headerimage/headerlogo2.png";
 import { RiCloseFill } from "react-icons/ri";
-import logo from "../../assets/footerimage/logo.png";
+import logo from "../../assets/electricscooterimage/logofooter.png";
 import locationf from "../../assets/footerimage/location.png";
 import phone from "../../assets/footerimage/telephone.png";
 import mail from "../../assets/footerimage/email.png";

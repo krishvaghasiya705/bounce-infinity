@@ -13,6 +13,7 @@ import Contact from "../module/contactus";
 import Pricing from "../module/pricing";
 import Accordian from "../module/question";
 import Banglore from "../module/banglore";
+import Electricscooter from "../module/elctrciscooterpage";
 
 const router = createBrowserRouter([
     {
@@ -72,6 +73,10 @@ const router = createBrowserRouter([
     {
         path: "/Banglore",
         element: <Banglore />
+    },
+    {
+        path: "/Electricscooter",
+        element: <Electricscooter/>
     }
 ])
 
