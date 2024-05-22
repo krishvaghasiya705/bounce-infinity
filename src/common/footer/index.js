@@ -1,13 +1,13 @@
 import React from 'react'
 import './footer.scss';
-import logo from "../../assets/footerimage/logo.png";
+import logof from "../../assets/footerimage/logo.png";
 import location from "../../assets/footerimage/location.png";
 import phone from "../../assets/footerimage/telephone.png";
 import mail from "../../assets/footerimage/email.png";
 import copyright from "../../assets/footerimage/copyright.png";
 import { Link } from 'react-router-dom';
 
-export default function Footer() {
+const Footer = () => {
     return (
         <div>
             <footer>
@@ -15,7 +15,7 @@ export default function Footer() {
                     <div className="footer-containt">
                         <div className="footer-contant-pera">
                             <Link to={"/"}>
-                                <img src={logo} alt="logo" />
+                                <img src={logof} alt="logo" />
                             </Link>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         </div>
@@ -55,7 +55,7 @@ export default function Footer() {
             <div className="footer-mobile">
                 <div className="footer-logo-mobile-main">
                     <Link to={"/"}>
-                        <img src={logo} alt="logo" />
+                        <img src={logof} alt="logo" />
                     </Link>
                 </div>
                 <div className="footer-mobile-pera-main">
@@ -102,3 +102,5 @@ export default function Footer() {
         </div>
     )
 }
+
+export default Footer;
