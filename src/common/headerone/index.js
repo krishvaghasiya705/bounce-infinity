@@ -53,7 +53,7 @@ const Headerone = () => {
                                     </Link>
                                 </div>
                                 <div className="header-contant-menu-ancer">
-                                    <Link id="dropdown-id-main-sc" to="/Dealership" className={location.pathname === '/Dealership' || location.pathname === '/Dealershipride' ? 'active' : ''}>
+                                    <Link id="dropdown-id-main-sc" to="/Dealership" className={location.pathname === '/Dealership' || location.pathname === '/Dealershipride' || location.pathname === '/Dealershipdetail' ? 'active' : ''}>
                                         <p>Dealerships</p>
                                         <span><IoChevronDown /></span>
 
@@ -72,8 +72,9 @@ const Headerone = () => {
                                     </Link>
                                 </div>
                                 <div className="header-contant-menu-ancer">
-                                    <Link id="dropdown-id-main-s-sc" to={"/Financial"}>
-                                        <a href="home">Pages</a>
+                                    <Link id="dropdown-id-main-s-sc" to={"/Financial"} className={location.pathname === '/Financial' ? 'active' : ''}>
+
+                                        <p>Pages</p>
                                         <span><IoChevronDown /></span>
 
                                         <div className="drop-down-box-main">
