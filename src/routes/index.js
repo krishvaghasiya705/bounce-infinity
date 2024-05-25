@@ -15,6 +15,7 @@ import Accordian from "../module/question";
 import Banglore from "../module/banglore";
 import Electricscooter from "../module/elctrciscooterpage";
 import Electricbanglore from "../module/elctricbanglorepage";
+import Errorpage from "../components/errorpage"
 
 const router = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
                 element: <Testride />
             }
         ]
+    },
+    {
+        path: "*",
+        element: <Errorpage />
     },
     {
         path: "/Dealership",
