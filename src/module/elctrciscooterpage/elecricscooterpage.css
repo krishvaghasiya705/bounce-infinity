@@ -1,0 +1,492 @@
+* {
+  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.herobanner-electric-main {
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 0 81px 0;
+  display: block;
+}
+@media (max-width: 1024px) {
+  .herobanner-electric-main {
+    display: none;
+  }
+}
+.herobanner-electric-main img {
+  width: 100%;
+  height: 100%;
+}
+.herobanner-electric-main .herobanner-inner-main {
+  padding: 144px 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 149px);
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1024px) {
+  .herobanner-electric-main .herobanner-inner-main {
+    padding: 0;
+    height: 100%;
+  }
+}
+.herobanner-electric-main .herobanner-inner-main .herobanner-inner-main-insc {
+  display: flex;
+  justify-content: space-between;
+  gap: 67px;
+  width: 100%;
+  height: 100%;
+  padding: 0 0 0 120px;
+}
+@media (max-width: 1400px) {
+  .herobanner-electric-main .herobanner-inner-main .herobanner-inner-main-insc {
+    padding: 0 0 0 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .herobanner-electric-main .herobanner-inner-main .herobanner-inner-main-insc {
+    padding: 0 0 0 50px;
+  }
+}
+.herobanner-electric-main .herobanner-inner-main .herobanner-inner-main-insc .scooter-first-div-main {
+  position: relative;
+  margin: 90px 0 0 0;
+}
+@media (max-width: 1300px) {
+  .herobanner-electric-main .herobanner-inner-main .herobanner-inner-main-insc .scooter-first-div-main {
+    margin: 50px 0 0 0;
+  }
+}
+@media (max-width: 1024px) {
+  .herobanner-electric-main .herobanner-inner-main .herobanner-inner-main-insc .scooter-first-div-main {
+    margin: 75px 0 0 0;
+  }
+}
+@media (max-width: 800px) {
+  .herobanner-electric-main .herobanner-inner-main .herobanner-inner-main-insc .scooter-first-div-main {
+    margin: 50px 0 0 0;
+  }
+}
+.herobanner-electric-main .herobanner-inner-main .herobanner-inner-main-insc .scooter-first-div-main .banglore-electric-titl-main h1 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 59px;
+  color: #FFF;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 0 15px 0;
+  min-width: 431px;
+}
+@media (max-width: 1300px) {
+  .herobanner-electric-main .herobanner-inner-main .herobanner-inner-main-insc .scooter-first-div-main .banglore-electric-titl-main h1 {
+    font-size: 32px;
+    line-height: 40px;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+  }
+}
+@media (max-width: 1024px) {
+  .herobanner-electric-main .herobanner-inner-main .herobanner-inner-main-insc .scooter-first-div-main .banglore-electric-titl-main h1 {
+    font-size: 25px;
+    line-height: 35px;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+  }
+}
+.herobanner-electric-main .herobanner-inner-main .herobanner-inner-main-insc .scooter-first-div-main .banglore-electric-titl-main p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 36px;
+  color: rgba(255, 255, 255, 0.8392156863);
+  font-family: "Montserrat", sans-serif;
+  margin: 0 0 40px 0;
+}
+@media (max-width: 1300px) {
+  .herobanner-electric-main .herobanner-inner-main .herobanner-inner-main-insc .scooter-first-div-main .banglore-electric-titl-main p {
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0 0 30px 0;
+  }
+}
+@media (max-width: 1024px) {
+  .herobanner-electric-main .herobanner-inner-main .herobanner-inner-main-insc .scooter-first-div-main .banglore-electric-titl-main p {
+    font-size: 13px;
+    line-height: 25px;
+  }
+}
+.herobanner-electric-main .herobanner-inner-main .herobanner-inner-main-insc .scooter-first-div-main .banglore-electric-titl-main .book-now-button-banglore {
+  margin: 0 0 105px 0;
+  width: 100%;
+}
+@media (max-width: 1300px) {
+  .herobanner-electric-main .herobanner-inner-main .herobanner-inner-main-insc .scooter-first-div-main .banglore-electric-titl-main .book-now-button-banglore {
+    margin: 0 0 20px 0;
+  }
+}
+.herobanner-electric-main .herobanner-inner-main .herobanner-inner-main-insc .scooter-first-div-main .banglore-electric-titl-main .book-now-button-banglore button {
+  width: 228px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  background: #EF404A;
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  transition: 0.5s ease-in-out;
+}
+.herobanner-electric-main .herobanner-inner-main .herobanner-inner-main-insc .scooter-first-div-main .banglore-electric-titl-main .book-now-button-banglore button:hover {
+  background: #FFF;
+  color: #EF404A;
+  transition: 0.5s ease-in-out;
+}
+.herobanner-electric-main .herobanner-inner-main .herobanner-inner-main-insc .scooter-first-div-main .herobanner-elec-page-button-main {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+.herobanner-electric-main .herobanner-inner-main .herobanner-inner-main-insc .scooter-first-div-main .herobanner-elec-page-button-main .herobanner-image-changer-button-main-div-sc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.herobanner-electric-main .herobanner-inner-main .herobanner-inner-main-insc .scooter-first-div-main .herobanner-elec-page-button-main .herobanner-image-changer-button-main-div-sc button {
+  background-color: #FFF;
+  height: 10px;
+  width: 10px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  display: block;
+}
+.herobanner-electric-main .herobanner-inner-main .herobanner-inner-main-insc .scooter-first-div-main .herobanner-elec-page-button-main .herobanner-image-changer-button-main-div-sc .active {
+  width: 35px;
+  height: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #EF404A;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.herobanner-electric-main .herobanner-inner-main .herobanner-inner-main-insc .scooter-div-two-main {
+  width: 100%;
+  height: 100%;
+}
+.herobanner-electric-main .herobanner-inner-main .herobanner-inner-main-insc .scooter-div-two-main .scooter-div-main {
+  margin: 0;
+  display: block;
+  background-image: url("../../assets/electricscooterimage/Rectangle9.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 0 70px 15px 88px;
+  width: calc(100% - 158px);
+  min-height: 513px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  .herobanner-electric-main .herobanner-inner-main .herobanner-inner-main-insc .scooter-div-two-main .scooter-div-main {
+    min-height: 371px;
+  }
+}
+@media (max-width: 800px) {
+  .herobanner-electric-main .herobanner-inner-main .herobanner-inner-main-insc .scooter-div-two-main .scooter-div-main {
+    padding: 0 40px 0 30px;
+  }
+}
+.herobanner-electric-main .herobanner-inner-main .herobanner-inner-main-insc .scooter-div-two-main .scooter-div-main img {
+  width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.herobanner-elec-mobile {
+  margin: 0 0 50px 0;
+  display: none;
+}
+@media (max-width: 1024px) {
+  .herobanner-elec-mobile {
+    display: block;
+  }
+}
+.herobanner-elec-mobile .herobanner-mobile-main {
+  background-image: url(../../assets/image/mobilebak.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+  width: calc(100% - 8px - 32px);
+  padding: 18px 8px 8px 32px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 576px) {
+  .herobanner-elec-mobile .herobanner-mobile-main {
+    padding: 18px 8px 8px 20px;
+    width: calc(100% - 28px);
+  }
+}
+@media (max-width: 300px) {
+  .herobanner-elec-mobile .herobanner-mobile-main {
+    padding: 18px 8px 8px 20px;
+    height: 350px;
+    width: calc(100% - 28px);
+  }
+}
+.herobanner-elec-mobile .herobanner-mobile-main .bounce-title-div-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.herobanner-elec-mobile .herobanner-mobile-main .bounce-title-div-main h1 {
+  text-align: center;
+  font-size: 21px;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
+  margin: 0 0 3px 0;
+}
+.herobanner-elec-mobile .herobanner-mobile-main .bounce-pera-div-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.herobanner-elec-mobile .herobanner-mobile-main .bounce-pera-div-main p {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
+  margin: 0 0 10px 0;
+}
+.herobanner-elec-mobile .herobanner-mobile-main .herobanner-mobile-button-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.herobanner-elec-mobile .herobanner-mobile-main .herobanner-mobile-button-main button {
+  background: #ef404a;
+  width: 131px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+.herobanner-elec-mobile .herobanner-mobile-main .herobanner-mobile-bike-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 400px) {
+  .herobanner-elec-mobile .herobanner-mobile-main .herobanner-mobile-bike-image {
+    left: 0px;
+  }
+}
+.herobanner-elec-mobile .herobanner-mobile-main .herobanner-mobile-bike-image img {
+  width: 100%;
+}
+.herobanner-elec-mobile .herobanner-mobile-main .herobanner-mobile-image-changer-button-main-div {
+  position: absolute;
+  z-index: 9;
+  bottom: 8px;
+  right: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 10px;
+}
+.herobanner-elec-mobile .herobanner-mobile-main .herobanner-mobile-image-changer-button-main-div button {
+  background-color: #FFF;
+  height: 10px;
+  width: 10px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.herobanner-elec-mobile .herobanner-mobile-main .herobanner-mobile-image-changer-button-main-div .active {
+  width: 10px;
+  height: 35px;
+  border: none;
+  border-radius: 10px;
+  background-color: #EF404A;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.electric-scooter-section-main-bnglore-page {
+  background: linear-gradient(0deg, #FFF1EB 0%, #ACE0F9 100%);
+  width: 100%;
+  padding: 80px 0;
+  margin: 0 0 100px 0;
+}
+.electric-scooter-section-main-bnglore-page .electric-scooter-container-main-bnglore-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.electric-scooter-section-main-bnglore-page .electric-scooter-container-main-bnglore-page .electric-sccooter-title-banglore-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 60px 0;
+}
+.electric-scooter-section-main-bnglore-page .electric-scooter-container-main-bnglore-page .electric-sccooter-title-banglore-main h2 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 35px;
+  font-family: "Montserrat", sans-serif;
+  color: #282828;
+  padding: 0 0 10px 0;
+  border-bottom: 4px solid #EF404A;
+}
+.electric-scooter-section-main-bnglore-page .electric-scooter-container-main-bnglore-page .scoter-crd-main-section-flx {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: nowrap;
+}
+@media (max-width: 1200px) {
+  .electric-scooter-section-main-bnglore-page .electric-scooter-container-main-bnglore-page .scoter-crd-main-section-flx {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.electric-scooter-section-main-bnglore-page .electric-scooter-container-main-bnglore-page .scoter-crd-main-section-flx .scooter-crd-box-one-main {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.0588235294);
+  padding: 25px 20px 30px 20px;
+}
+.electric-scooter-section-main-bnglore-page .electric-scooter-container-main-bnglore-page .scoter-crd-main-section-flx .scooter-crd-box-one-main .infinity-image-scooter-main {
+  display: block;
+  margin: 0 0 35px 0;
+}
+.electric-scooter-section-main-bnglore-page .electric-scooter-container-main-bnglore-page .scoter-crd-main-section-flx .scooter-crd-box-one-main .electic-section-inner-detail-main {
+  text-align: left;
+  padding: 0 0 25px 0;
+  margin: 0 0 22px 0;
+  border-bottom: 1px solid #E6E6E6;
+}
+.electric-scooter-section-main-bnglore-page .electric-scooter-container-main-bnglore-page .scoter-crd-main-section-flx .scooter-crd-box-one-main .electic-section-inner-detail-main h3 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  color: #282828;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 0 25px 0;
+}
+.electric-scooter-section-main-bnglore-page .electric-scooter-container-main-bnglore-page .scoter-crd-main-section-flx .scooter-crd-box-one-main .electic-section-inner-detail-main h4 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #4F4F4F;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 0 22px 0;
+}
+.electric-scooter-section-main-bnglore-page .electric-scooter-container-main-bnglore-page .scoter-crd-main-section-flx .scooter-crd-box-one-main .electic-section-inner-detail-main h5 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #4F4F4F;
+  font-family: "Montserrat", sans-serif;
+}
+.electric-scooter-section-main-bnglore-page .electric-scooter-container-main-bnglore-page .scoter-crd-main-section-flx .scooter-crd-box-one-main .electric-section-inner-details-sc-in h6 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #949494;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 0 8px 0;
+}
+.electric-scooter-section-main-bnglore-page .electric-scooter-container-main-bnglore-page .scoter-crd-main-section-flx .scooter-crd-box-one-main .electric-section-inner-details-sc-in p {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 35px;
+  color: #282828;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 0 30px 0;
+}
+.electric-scooter-section-main-bnglore-page .electric-scooter-container-main-bnglore-page .scoter-crd-main-section-flx .scooter-crd-box-one-main .electric-section-inner-details-sc-in .read-more-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.electric-scooter-section-main-bnglore-page .electric-scooter-container-main-bnglore-page .scoter-crd-main-section-flx .scooter-crd-box-one-main .electric-section-inner-details-sc-in .read-more-button button {
+  width: 338px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background: #EF404A;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid #EF404A;
+  transition: 0.5s ease-in-out;
+}
+.electric-scooter-section-main-bnglore-page .electric-scooter-container-main-bnglore-page .scoter-crd-main-section-flx .scooter-crd-box-one-main .electric-section-inner-details-sc-in .read-more-button button:hover {
+  transition: 0.5s ease-in-out;
+  color: #EF404A;
+  background: #FFF;
+}
+.electric-scooter-section-main-bnglore-page .electric-scooter-container-main-bnglore-page .scoter-crd-main-section-flx .scooter-crd-box-one-main .electric-section-inner-details-sc-in .read-more-button button:hover span {
+  background-image: url("../../assets/bangaloreimage/readarrowtwo.png");
+  transition: 0.5s ease-in-out;
+}
+.electric-scooter-section-main-bnglore-page .electric-scooter-container-main-bnglore-page .scoter-crd-main-section-flx .scooter-crd-box-one-main .electric-section-inner-details-sc-in .read-more-button button span {
+  transition: 0.5s ease-in-out;
+  background-image: url("../../assets/bangaloreimage/readarrow.png");
+  width: 30px;
+  height: 14px;
+}/*# sourceMappingURL=elecricscooterpage.css.map */

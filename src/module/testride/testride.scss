@@ -110,6 +110,12 @@ p {
                     }
                 }
 
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+
                 img {
                     position: absolute;
                     top: 14px;
@@ -325,6 +331,12 @@ p {
                         color: #6c6c6c;
                     }
                 }
+
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
             }
         }
 
@@ -514,12 +526,12 @@ p {
                     border: none;
                     color: #FFF;
                     transition: .5s ease-in-out;
-    
+
                     .dealer-title-flx-main {
                         display: flex;
                         justify-content: space-between;
                         margin: 0 0 10px 0;
-    
+
                         h4 {
                             font-size: 16px;
                             font-weight: 700;
@@ -527,16 +539,16 @@ p {
                             font-family: "Montserrat", sans-serif;
                             max-width: 384px;
                         }
-    
+
                         img {
                             width: 20px;
                             height: 16px;
                             display: none;
                         }
-    
+
                         .side-hv {
                             display: block;
-    
+
                             img {
                                 width: 20px;
                                 height: 16px;
@@ -544,28 +556,28 @@ p {
                             }
                         }
                     }
-    
+
                     .location-dealer-flx-main {
                         display: flex;
                         gap: 12px;
                         margin: 0 0 10px 0;
-    
+
                         img {
                             width: 12px;
                             height: 16px;
                             display: none;
                         }
-    
+
                         .loc-hv {
                             display: block;
-    
+
                             img {
                                 width: 12px;
                                 height: 16px;
                                 display: block;
                             }
                         }
-    
+
                         p {
                             font-size: 12px;
                             font-weight: 400;
@@ -573,28 +585,28 @@ p {
                             font-family: "Montserrat", sans-serif;
                         }
                     }
-    
+
                     .phone-dealer-ship-flx-main {
                         display: flex;
                         align-items: center;
                         gap: 11px;
-    
+
                         img {
                             width: 13px;
                             height: 13px;
                             display: none;
                         }
-    
+
                         .phon-hv {
                             display: block;
-    
+
                             img {
                                 width: 13px;
                                 height: 13px;
                                 display: block;
                             }
                         }
-    
+
                         span {
                             display: block;
                             font-size: 12px;
@@ -603,18 +615,18 @@ p {
                             font-family: "Montserrat", sans-serif;
                         }
                     }
-    
+
                     &:nth-child(6n + 5) {
                         display: block;
-    
+
                         @media (max-width:576px) {
                             display: none;
                         }
                     }
-    
+
                     &:nth-child(6n + 6) {
                         display: block;
-    
+
                         @media (max-width:576px) {
                             display: none;
                         }
@@ -894,6 +906,12 @@ p {
                                 color: #6c6c6c;
                             }
                         }
+
+                        input::-webkit-outer-spin-button,
+                        input::-webkit-inner-spin-button {
+                            -webkit-appearance: none;
+                            margin: 0;
+                        }
                     }
 
                     .input-box-sec {
@@ -926,6 +944,12 @@ p {
                                 &::placeholder {
                                     color: #6c6c6c;
                                 }
+                            }
+
+                            input::-webkit-outer-spin-button,
+                            input::-webkit-inner-spin-button {
+                                -webkit-appearance: none;
+                                margin: 0;
                             }
 
                             select {

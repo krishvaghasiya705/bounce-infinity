@@ -4,6 +4,11 @@
   margin: 0;
   padding: 0;
 }
+* input::-webkit-outer-spin-button,
+* input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 h1,
 h2,
@@ -1061,6 +1066,7 @@ p {
   width: 100%;
   padding: 19px 18px 19px 18px;
   font-family: "Montserrat", sans-serif;
+  outline: none;
 }
 .pricing-section-main .pricing-section-second-box-main .pricing-section-form-inp-one .inp-first-main-div select :focus {
   outline: none;
@@ -1097,6 +1103,7 @@ p {
   width: 100%;
   padding: 19px 18px 19px 18px;
   font-family: "Montserrat", sans-serif;
+  outline: none;
 }
 .pricing-section-main .pricing-section-second-box-main .pricing-section-form-inp-two .pricing-section-form-inp-two-inner-inp-one select :focus {
   outline: none;
@@ -1417,6 +1424,11 @@ p {
 .dealership-sction-main .container-dealer-ship-main .dealer-ship-table-main .pincode-div-main .pincode-title-main .pincode-inp-main input::placeholder {
   color: #575757;
 }
+.dealership-sction-main .container-dealer-ship-main .dealer-ship-table-main .pincode-div-main .pincode-title-main .pincode-inp-main input::-webkit-outer-spin-button,
+.dealership-sction-main .container-dealer-ship-main .dealer-ship-table-main .pincode-div-main .pincode-title-main .pincode-inp-main input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .dealership-sction-main .container-dealer-ship-main .dealer-ship-table-main .pincode-div-main .pincode-title-main .pincode-inp-main button {
   margin: 0;
   position: absolute;
@@ -1524,6 +1536,7 @@ p {
   border-radius: 6px;
   display: block;
   cursor: pointer;
+  transition: 0.5s ease-in-out;
 }
 .dealership-sction-main .container-dealer-ship-main .dealer-ship-table-main .llp-boxes-main .llp-box-one:hover {
   background-color: #EF404A;
@@ -1907,6 +1920,7 @@ p {
   border-radius: 6px;
   padding: 19px 18px;
   width: calc(100% - 36px);
+  outline: none;
 }
 .emi-calculator-div-main .emi-container .down-payment-div-main-last .down-paymane-div-two select:focus {
   outline: none;
@@ -2449,7 +2463,14 @@ p {
   transition: 0.5s ease-in-out;
 }
 .press-stm-section-main .container-press .press-card-div-main .press-card-div-box-one p .pera-active-more {
-  transition: 0.5s ease-in-out;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+  opacity: 0;
+}
+.press-stm-section-main .container-press .press-card-div-main .press-card-div-box-one p .pera-active-more.show {
+  max-height: 100px;
+  opacity: 1;
 }
 .press-stm-section-main .container-press .press-card-div-main .press-card-div-box-one button {
   border: none;

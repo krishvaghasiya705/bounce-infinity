@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './home.scss';
+import Faq from "../../common/faq"
 import scootyone from "../../assets/image/scooty1.png";
 import scootytwo from "../../assets/image/scooty2.png";
 import scootythree from "../../assets/image/scooty3.png";
@@ -25,36 +26,6 @@ import "slick-carousel/slick/slick-theme.scss";
 import rightarrowt from "../../assets/image/rightarrowt.png"
 import { Link } from 'react-router-dom';
 // import { FaHome } from "react-icons/fa";
-
-
-
-
-function Accordion({ items }) {
-  const [openIndex, setOpenIndex] = useState(0);
-
-  const toggleItem = (index) => {
-    setOpenIndex(index === openIndex ? -1 : index);
-  };
-
-  return (
-    <div className="accordion">
-      {items.map((item, index) => (
-        <div key={index} className={`accordion-item ${openIndex === index ? 'open' : ''}`} onClick={() => toggleItem(index)}>
-          <div className={`accordion-title ${openIndex === index ? 'open' : ''}`} onClick={() => toggleItem(index)}>
-            <h3>{item.title}</h3>
-            <span className={`icon ${openIndex === index ? 'minus' : 'plus'}`}></span>
-          </div>
-          <div className={`accordion-content ${openIndex === index ? 'open' : ''}`}>
-            <p>
-              {item.content}
-            </p>
-            <div className={`accordion-content-side-line ${openIndex === index ? 'open' : ''}`}></div>
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-}
 
 
 
@@ -101,16 +72,6 @@ export default function Home() {
   const handleClick3 = () => {
     setShowMore3(!showMore3);
   };
-
-
-  const accordionItems = [
-    { title: "Lorem Ipsum is simply dummy text ?", content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. " },
-    { title: "Lorem Ipsum is simply dummy text ?", content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. " },
-    { title: "Lorem Ipsum is simply dummy text ?", content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. " },
-    { title: "Lorem Ipsum is simply dummy text ?", content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. " },
-    { title: "Lorem Ipsum is simply dummy text ?", content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. " },
-  ];
-
 
 
   const settings = {
@@ -595,7 +556,7 @@ export default function Home() {
           <div className="down-payment-div-main-last">
             <div className="down-paymane-div-one">
               <h1>Down Payment</h1>
-              <input type="text" placeholder='Enter amount' />
+              <input type="number" placeholder='Enter amount' />
             </div>
             <div className="down-paymane-div-two">
               <h1>Interest</h1>
@@ -645,7 +606,7 @@ export default function Home() {
         </div>
       </div>
 
- 
+
 
       <div className="client-review-slider-main-background">
         <div className="conatiner-review">
@@ -675,18 +636,7 @@ export default function Home() {
 
 
 
-      <div className="faq-section-main">
-        <div className="faq-container">
-          <div className="faq-title-main">
-            <h1>Have Any Question?</h1>
-          </div>
-        </div>
-
-        <div className="accordian-container">
-          <Accordion items={accordionItems} />
-        </div>
-
-      </div>
+      <Faq />
 
 
 
@@ -700,43 +650,37 @@ export default function Home() {
             <div className="press-card-div-box-one">
               <img src={pressone} alt="pressone" />
               <h2>Lorem Ipsum</h2>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text {' '}
-                {showMore && (
-                  <div className="pera-active-more">
-                    Here is the second half of the paragraph. You can add more content here.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </div>
-                )}
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text {' '}
+                <div className={`pera-active-more ${showMore ? 'show' : ''}`}>
+                  Here is the second half of the paragraph. You can add more content here.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </div>
               </p>
-              <button type='submit' onClick={handleClick}>{showMore ? 'Show Less' : 'View more'}</button>
+              <button type='button' onClick={handleClick}>{showMore ? 'Show Less' : 'View more'}</button>
             </div>
 
             <div className="press-card-div-box-one">
               <img src={presstwo} alt="presstwo" />
               <h2>Lorem Ipsum</h2>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text {' '}
-                {showMore2 && (
-                  <div className="pera-active-more">
-                    Here is the second half of the paragraph. You can add more content here.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </div>
-                )}
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text {' '}
+                <div className={`pera-active-more ${showMore2 ? 'show' : ''}`}>
+                  Here is the second half of the paragraph. You can add more content here.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </div>
               </p>
-              <button type='submit' onClick={handleClick2}>{showMore2 ? 'Show Less' : 'View more'}</button>
+              <button type='button' onClick={handleClick2}>{showMore2 ? 'Show Less' : 'View more'}</button>
             </div>
 
             <div className="press-card-div-box-one">
               <img src={pressthree} alt="pressthree" />
               <h2>Lorem Ipsum</h2>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text {' '}
-                {showMore3 && (
-                  <div className="pera-active-more">
-                    Here is the second half of the paragraph. You can add more content here.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </div>
-                )}
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text {' '}
+                <div className={`pera-active-more ${showMore3 ? 'show' : ''}`}>
+                  Here is the second half of the paragraph. You can add more content here.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </div>
               </p>
-              <button type='submit' onClick={handleClick3}>{showMore3 ? 'Show Less' : 'View more'}</button>
+              <button type='button' onClick={handleClick3}>{showMore3 ? 'Show Less' : 'View more'}</button>
             </div>
           </div>
         </div>

@@ -16,7 +16,7 @@ import esscooter from "../../assets/dealershipimage/E1 SPORTY RED 3.png";
 export default function Dealershipride() {
 
 
-    const [div1Visible, setDiv1Visible] = useState(true); // Set div1Visible to true by default
+    const [div1Visible, setDiv1Visible] = useState(true);
     const [div2Visible, setDiv2Visible] = useState(false);
 
     const toggleDiv1 = () => {

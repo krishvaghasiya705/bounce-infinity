@@ -14,6 +14,7 @@ import Pricing from "../module/pricing";
 import Accordian from "../module/question";
 import Banglore from "../module/banglore";
 import Electricscooter from "../module/elctrciscooterpage";
+import Electricbanglore from "../module/elctricbanglorepage";
 
 const router = createBrowserRouter([
     {
@@ -56,19 +57,19 @@ const router = createBrowserRouter([
     },
     {
         path: "/Socialmediadetails",
-        element: <Socialmediadetails/>
+        element: <Socialmediadetails />
     },
     {
         path: "/Contact",
-        element: <Contact/>
+        element: <Contact />
     },
     {
         path: "/Pricing",
-        element: <Pricing/>
+        element: <Pricing />
     },
     {
         path: "/Accordian",
-        element: <Accordian/>
+        element: <Accordian />
     },
     {
         path: "/Banglore",
@@ -76,7 +77,11 @@ const router = createBrowserRouter([
     },
     {
         path: "/Electricscooter",
-        element: <Electricscooter/>
+        element: <Electricscooter />
+    },
+    {
+        path: "Electricbanglore",
+        element: <Electricbanglore />
     }
 ])
 

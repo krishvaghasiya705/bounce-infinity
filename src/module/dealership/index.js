@@ -64,7 +64,9 @@ export default function Dealership() {
                             </div>
                             <div className="test-drive-loaction-boxes-main">
                                 <button type="submit">Delhi</button>
-                                <button type="submit">Bangalore</button>
+                                <Link to={"/Electricbanglore"}>
+                                    <button type="submit">Bangalore</button>
+                                </Link>
                                 <button type="submit">Hyderabad</button>
                                 <button type="submit">Jaipur</button>
                                 <button type="submit">Mumbai</button>

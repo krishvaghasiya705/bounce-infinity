@@ -104,6 +104,11 @@ p {
 .book-ride-section-main .book-ride-section-container .book-ride-box-back-main .test-ride-box-inner-input input:focus {
   outline: none;
 }
+.book-ride-section-main .book-ride-section-container .book-ride-box-back-main .test-ride-box-inner-input input::-webkit-outer-spin-button,
+.book-ride-section-main .book-ride-section-container .book-ride-box-back-main .test-ride-box-inner-input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .book-ride-section-main .book-ride-section-container .book-ride-box-back-main .test-ride-box-inner-input img {
   position: absolute;
   top: 14px;
@@ -298,6 +303,11 @@ p {
 }
 .addresss-div-rsp-main .address-container .adddress-input-section-main .address-input-box-one input::placeholder {
   color: #6c6c6c;
+}
+.addresss-div-rsp-main .address-container .adddress-input-section-main .address-input-box-one input::-webkit-outer-spin-button,
+.addresss-div-rsp-main .address-container .adddress-input-section-main .address-input-box-one input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 .addresss-div-rsp-main .address-container .done-button-main {
   display: flex;
@@ -804,6 +814,11 @@ p {
 .select-ride-main .select-div-container .personal-details-section-main .personal-details-container .personal-details-contact-main .input-box-one input::placeholder {
   color: #6c6c6c;
 }
+.select-ride-main .select-div-container .personal-details-section-main .personal-details-container .personal-details-contact-main .input-box-one input::-webkit-outer-spin-button,
+.select-ride-main .select-div-container .personal-details-section-main .personal-details-container .personal-details-contact-main .input-box-one input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .select-ride-main .select-div-container .personal-details-section-main .personal-details-container .personal-details-contact-main .input-box-sec {
   text-align: left;
 }
@@ -834,6 +849,11 @@ p {
 }
 .select-ride-main .select-div-container .personal-details-section-main .personal-details-container .personal-details-contact-main .input-box-sec .input-box-two input::placeholder {
   color: #6c6c6c;
+}
+.select-ride-main .select-div-container .personal-details-section-main .personal-details-container .personal-details-contact-main .input-box-sec .input-box-two input::-webkit-outer-spin-button,
+.select-ride-main .select-div-container .personal-details-section-main .personal-details-container .personal-details-contact-main .input-box-sec .input-box-two input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 .select-ride-main .select-div-container .personal-details-section-main .personal-details-container .personal-details-contact-main .input-box-sec .input-box-two select {
   position: absolute;
