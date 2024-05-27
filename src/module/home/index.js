@@ -82,7 +82,33 @@ export default function Home() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1500,
-    cssEase: "linear"
+    cssEase: "linear",
+    centerMode: true,
+    centerPadding: "0",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+          centerPadding: "40px",
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+          centerPadding: "0px",
+        },
+      },
+    ],
   };
 
   const topRef = useRef(null);
@@ -615,20 +641,16 @@ export default function Home() {
           </div>
           <div className="slider-container">
             <Slider {...settings}>
-
-              {[1, 2, 3].map(() => {
-                return (
-                  <div className="slider-box-one">
-                    <h2>“</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    <div className="person-image-main">
-                      <img src={person} alt="person" />
-                    </div>
-                    <h3>Marcus Torff</h3>
+              {[1, 2, 3].map((_, index) => (
+                <div className="slider-box-one" key={index}>
+                  <h2>“</h2>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                  <div className="person-image-main">
+                    <img src={person} alt="person" />
                   </div>
-                )
-              })}
-
+                  <h3>Marcus Torff</h3>
+                </div>
+              ))}
             </Slider>
           </div>
         </div>

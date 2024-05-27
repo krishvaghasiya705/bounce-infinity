@@ -54,7 +54,33 @@ export default function Socialmedia() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1500,
-    cssEase: "linear"
+    cssEase: "linear",
+    centerMode: true,
+    centerPadding: "0",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+          centerPadding: "40px",
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+          centerPadding: "0px",
+        },
+      },
+    ],
   };
 
 

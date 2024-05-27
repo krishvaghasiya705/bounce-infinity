@@ -2343,7 +2343,7 @@ p {
     background: linear-gradient(297.24deg, #C2E9FB 8.25%, #A1C4FD 91.76%);
 
     .conatiner-review {
-        max-width: 1280px;
+        max-width: 1240px;
         margin: 0 auto;
         padding: 0 20px;
 
@@ -2351,14 +2351,14 @@ p {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 0 0 60px 0;
+            margin-bottom: 60px;
 
             h1 {
                 color: #282828;
                 font-size: 34px;
                 font-weight: 700;
                 font-family: "Montserrat", sans-serif;
-                padding: 0 0 10px 0;
+                padding-bottom: 10px;
                 border-bottom: 4px solid #FF0A0F;
             }
         }
@@ -2366,7 +2366,7 @@ p {
         .slider-container {
             max-width: 1240px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0;
         }
 
         .slick-arrow {
@@ -2378,15 +2378,15 @@ p {
             align-items: center;
             gap: 60px;
             overflow-x: hidden;
-            margin: 0 0 60px 0;
+            margin-bottom: 60px;
             width: 100%;
             cursor: pointer !important;
 
-            @media (max-width:1024px) {
-                gap: 20px;
+            @media (max-width: 1024px) {
+                gap: 40px;
             }
 
-            @media (max-width:576px) {
+            @media (max-width: 768px) {
                 gap: 20px;
             }
 
@@ -2398,8 +2398,10 @@ p {
                 min-width: calc(348px - 48px);
                 height: calc(297px - 48px);
 
-                @media (max-width:400px) {
+                @media (max-width: 576px) {
                     min-width: 300px;
+                    height: auto;
+                    margin: 0 auto; // Center the box
                 }
 
                 h2 {
@@ -2416,15 +2418,14 @@ p {
                     font-weight: 400;
                     font-family: "Poppins", sans-serif;
                     text-align: center;
-                    margin: 0 0 12px 0;
-                    left: 18px;
+                    margin-bottom: 12px;
                 }
 
                 .person-image-main {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    margin: 0 0 5px 0;
+                    margin-bottom: 5px;
 
                     img {
                         width: 30px;
@@ -2442,7 +2443,7 @@ p {
             }
         }
 
-        slick-slide {
+        .slick-slide {
             width: auto !important;
         }
 
@@ -2456,7 +2457,7 @@ p {
                 width: 10px !important;
                 height: 10px !important;
                 color: transparent !important;
-                transition: .5s ease-in-out;
+                transition: 0.5s ease-in-out;
 
                 button {
                     width: 10px !important;
@@ -2465,19 +2466,19 @@ p {
                     background-color: #FFFFFF !important;
                     border-radius: 50% !important;
                     margin: 0 !important;
-                    transition: .5s ease-in-out;
+                    transition: 0.5s ease-in-out;
 
                     &:before {
                         width: 10px !important;
                         height: 10px !important;
                         color: transparent !important;
                         top: 0 !important;
-                        transition: .5s ease-in-out;
+                        transition: 0.5s ease-in-out;
                     }
                 }
 
                 &.slick-active {
-                    transition: .5s ease-in-out;
+                    transition: 0.5s ease-in-out;
 
                     button {
                         width: 10px !important;
@@ -2490,7 +2491,7 @@ p {
                         top: 0 !important;
 
                         &:before {
-                            transition: .5s ease-in-out;
+                            transition: 0.5s ease-in-out;
                             top: 0 !important;
                             left: -10px !important;
                             width: 30px !important;
@@ -2507,6 +2508,8 @@ p {
         }
     }
 }
+
+
 
 
 
