@@ -451,14 +451,6 @@ p {
                         transition: .5s ease-in-out;
                     }
 
-                    @media (max-width:1024px) {
-                        text-align: right;
-                    }
-
-                    @media (max-width:576px) {
-                        text-align: left;
-                    }
-
                     a {
                         text-decoration: none;
                         font-family: "Montserrat", sans-serif;
@@ -467,7 +459,123 @@ p {
                         line-height: 23.5px;
                         cursor: pointer;
                         transition: .5s ease-in-out;
+                        color: #aba9a9;
+                    }
+
+                    .active {
+                        transition: .5s ease-in-out;
                         color: #FFF;
+                    }
+
+                    span {
+                        text-decoration: none;
+                        font-family: "Montserrat", sans-serif;
+                        font-size: 19px;
+                        font-weight: 500;
+                        line-height: 23.5px;
+                        cursor: pointer;
+                        transition: .5s ease-in-out;
+                        color: #aba9a9;
+                    }
+
+                    p {
+                        text-decoration: none;
+                        font-family: "Montserrat", sans-serif;
+                        font-size: 19px;
+                        font-weight: 500;
+                        cursor: pointer;
+                        transition: .5s ease-in-out;
+                        color: #FFF;
+                    }
+                }
+
+                .dropdown {
+                    display: inline-block;
+                    width: calc(100% - 20px);
+                    position: relative;
+
+                    .dropdown-button {
+                        color: #aba9a9;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 10px;
+                    }
+
+                    .img {
+                        position: absolute;
+                        top: 18px;
+                        right: 10px;
+                        width: 15px;
+                        height: 8px;
+                        rotate: 0deg;
+                        transition: .5s ease-in-out;
+
+                        &.rotate {
+                            transition: .5s ease-in-out;
+                            rotate: 180deg;
+                        }
+                    }
+                }
+
+                .dropdown-content {
+                    display: none;
+                    width: 100%;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                    max-height: 0;
+                    overflow: hidden;
+                    box-sizing: border-box;
+                    transition: max-height 0.3s ease-out;
+
+                    .active {
+                        transition: .5s ease-in-out;
+                        color: #FFF;
+                    }
+
+                    a {
+                        font-family: "Montserrat", sans-serif;
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 23.5px;
+                        cursor: pointer;
+                        background-color: #333;
+                        text-decoration: none;
+                        color: #aba9a9;
+                        padding: 10px;
+                        display: block;
+                        opacity: 0;
+                        transform: translateY(-10px);
+                        animation: fadeIn 0.3s forwards;
+                        transition: .5s ease-in-out;
+
+                        &:nth-child(1) {
+                            animation-delay: 0.1s;
+                            margin: 0 0 0 20px;
+                        }
+
+                        &:nth-child(2) {
+                            animation-delay: 0.2s;
+                            margin: 0 0 0 30px;
+                        }
+
+                        &:nth-child(3) {
+                            animation-delay: 0.3s;
+                            margin: 0 0 0 40px;
+                        }
+                    }
+
+                    &.show {
+                        display: block;
+                        max-height: 600px;
+                        transition: max-height 0.3s ease-out;
+                    }
+                }
+
+                @keyframes fadeIn {
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
                     }
                 }
 
@@ -486,16 +594,6 @@ p {
                     &:hover {
                         color: #FFF;
                         transition: .5s ease-in-out;
-                    }
-
-                    @media (max-width:1024px) {
-                        right: auto;
-                        left: 10px;
-                    }
-
-                    @media (max-width:576px) {
-                        right: 10px;
-                        left: auto;
                     }
                 }
             }

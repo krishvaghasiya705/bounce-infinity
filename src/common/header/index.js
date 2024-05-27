@@ -7,13 +7,25 @@ import hamburger from "../../assets/headerimage/hamburger.png";
 import mobilelogo from "../../assets/headerimage/headerlogo2.png";
 import { RiCloseFill } from "react-icons/ri";
 import { Link } from 'react-router-dom';
+import dropdown from "../../assets/headerimage/dropdownscc.png";
 
 export default function Header() {
+
+    const [Open, SetOpen] = useState(false);
+
+    const toggleDropdown = () => {
+        SetOpen(!Open);
+    };
+
+    const [Open1, SetOpen1] = useState(false);
+
+    const toggleDropdown1 = () => {
+        SetOpen1(!Open1);
+    };
 
     const topRef = useRef(null);
 
     useEffect(() => {
-        // Scroll to the top of the page when the component mounts
         topRef.current.scrollIntoView({ behavior: "smooth" });
     }, []);
 
@@ -96,7 +108,7 @@ export default function Header() {
                                     </Link>
                                 </div>
                                 <div className="header-contant-menu-ancer">
-                                    <Link to={"/Pricing"}>
+                                    <Link to={"/Pricing"} className={location.pathname === '/Pricing' ? 'active' : ''}>
                                         <p>Pricing</p>
                                         <div className="hover-brd-cls"></div>
                                     </Link>
@@ -123,22 +135,38 @@ export default function Header() {
                             <p className="close" onClick={closeSidebar}><RiCloseFill /></p>
                             <ul>
                                 <li>
-                                    <Link to={"/"}>Home</Link>
+                                    <Link to={"/"} className={location.pathname === '/' || location.pathname === '/Banglore' ? 'active' : ''}>Home</Link>
                                 </li>
                                 <li>
-                                    <Link to={"/Testride"}>Test Ride</Link>
+                                    <Link to={"/Testride"} className={location.pathname === '/Testride' ? 'active' : ''}>Test Ride</Link>
+                                </li>
+                                <li className="dropdown">
+                                    <div onClick={toggleDropdown} className="dropdown-button">
+                                        <span className={location.pathname === '/Dealership' || location.pathname === '/Dealershipride' ? 'active' : ''}>Dealerships</span>
+                                    </div>
+                                    <img className={`img ${Open ? 'rotate' : ''}`} src={dropdown} alt="dropdown" />
+                                </li>
+                                <div className={`dropdown-content ${Open ? 'show' : ''}`}>
+                                    <Link to={"/Dealership"} className={location.pathname === '/Dealership' ? 'active' : ''}>Dealerships</Link>
+                                    <Link to={"/Dealershipride"} className={location.pathname === '/Dealership' || location.pathname === '/Dealershipride' ? 'active' : ''}>Book Ride</Link>
+                                    <Link to={"/Dealershipdetail"} className={location.pathname === '/Dealership' || location.pathname === '/Dealershipdetail' ? 'active' : ''}>Ride Details</Link>
+                                </div>
+                                <li className="dropdown">
+                                    <div onClick={toggleDropdown1} className="dropdown-button">
+                                        <span className={location.pathname === '/Financial' || location.pathname === '/Socialmedia' || location.pathname === '/Socialmediadetails' ? 'active' : ''}>Pages</span>
+                                    </div>
+                                    <img className={`img ${Open1 ? 'rotate' : ''}`} src={dropdown} alt="dropdown" />
+                                </li>
+                                <div className={`dropdown-content ${Open1 ? 'show' : ''}`}>
+                                    <Link to={"/Financial"} className={location.pathname === '/Financial' ? 'active' : ''}>Pages / Financial</Link>
+                                    <Link to={"/Socialmedia"} className={location.pathname === '/Socialmedia' ? 'active' : ''}>Social Media</Link>
+                                    <Link to={"/Socialmediadetails"} className={location.pathname === '/Socialmediadetails' ? 'active' : ''}>Social Media Details</Link>
+                                </div>
+                                <li>
+                                    <Link to={"/Pricing"} className={location.pathname === '/Pricing' ? 'active' : ''}>Pricing</Link>
                                 </li>
                                 <li>
-                                    <Link to={"/Dealership"}>Dealerships</Link>
-                                </li>
-                                <li>
-                                    <a href="home">Pages</a>
-                                </li>
-                                <li>
-                                    <a href="home">Pricing</a>
-                                </li>
-                                <li>
-                                    <a href="home">Contact Us</a>
+                                    <Link to={"/Contact"} className={location.pathname === '/Contact' ? 'active' : ''}>Contact Us</Link>
                                 </li>
                             </ul>
                         </div>
@@ -154,6 +182,7 @@ export default function Header() {
                     </div>
                 </div>
             </div>
+
         </div>
     )
 }

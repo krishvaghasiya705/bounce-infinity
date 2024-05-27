@@ -126,6 +126,7 @@ export default function Socialmediadetails() {
                 </div>
             </div>
 
+
             <Footer />
 
         </div>
