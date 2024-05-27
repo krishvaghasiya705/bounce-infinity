@@ -18,7 +18,7 @@ export default function Error() {
                         <div className="look-pera-main">
                             <div>
                                 <h3>Look like you're lost</h3>
-                                <p>the page you are looking for not avaible!</p>
+                                <p>the page you are looking for not available!</p>
                                 <div className="error-button-go-home">
                                     <Link to={"/"}>
                                         <button>

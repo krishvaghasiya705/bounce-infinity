@@ -24,7 +24,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.scss";
 import "slick-carousel/slick/slick-theme.scss";
 import rightarrowt from "../../assets/image/rightarrowt.png"
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';  
 // import { FaHome } from "react-icons/fa";
 
 
