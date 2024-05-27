@@ -10,6 +10,9 @@ import scootythree from "../../assets/electricbangloreimage/Group 642 (3).png";
 import cardimage from "../../assets/electricbangloreimage/cardimage.png";
 import locationicon from "../../assets/electricbangloreimage/locationicon.png";
 import phoneicon from "../../assets/electricbangloreimage/phoneicon.png";
+import scootyoneo from "../../assets/electricbangloreimage/scooty1.png";
+import scootytwoo from "../../assets/electricbangloreimage/scooty2.png";
+import scootythreeo from "../../assets/electricbangloreimage/scooty3.png";
 
 export default function Electricbanglore() {
 
@@ -25,6 +28,27 @@ export default function Electricbanglore() {
 
         const changeImage = () => {
             setCurrentImages(images[currentIndex]);
+            currentIndex = (currentIndex + 1) % images.length;
+        };
+
+        const interval = setInterval(changeImage, 2000);
+
+        return () => clearInterval(interval);
+    }, []);
+
+
+    const [currentImageo, setCurrentImage] = useState(scootyone);
+
+    const handleImageChangeo = (newImage) => {
+        setCurrentImage(newImage);
+    };
+
+    useEffect(() => {
+        const images = [scootyoneo, scootytwoo, scootythreeo];
+        let currentIndex = 0;
+
+        const changeImage = () => {
+            setCurrentImage(images[currentIndex]);
             currentIndex = (currentIndex + 1) % images.length;
         };
 
@@ -98,7 +122,7 @@ export default function Electricbanglore() {
                         <h1>Electric Scooter Dealers & Showroom in Bangalore</h1>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum.</p>
                         <div className="book-now-buttton-main">
-                            <button>Book Now</button>
+                            <button type="submit">Book Now</button>
                         </div>
 
                         <div className="herobanner-baanglore-image-changer-button-main-div">
@@ -109,6 +133,37 @@ export default function Electricbanglore() {
                     </div>
                 </div>
             </div>
+
+
+            <div className="herobanner-mobile-scc">
+                <div className="herobanner-mobile-main">
+                    <div>
+                        <div className="bounce-title-div-main">
+                            <h1>Electric Scooter Dealers & Showroom in Bangalore</h1>
+                        </div>
+                        <div className="bounce-pera-div-main">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum.</p>
+                        </div>
+                        <div className="herobanner-mobile-button-main">
+                            <button type="submit">Book Now</button>
+                        </div>
+                    </div>
+                    <div className="herobanner-mobile-image-changer-button-main-div">
+                        <button onClick={() => handleImageChangeo(scootyoneo)} type="button" className={currentImageo === scootyoneo ? 'active' : ''}></button>
+                        <button onClick={() => handleImageChangeo(scootytwoo)} type="button" className={currentImageo === scootytwoo ? 'active' : ''}></button>
+                        <button onClick={() => handleImageChangeo(scootythreeo)} type="button" className={currentImageo === scootythreeo ? 'active' : ''}></button>
+                    </div>
+                    <div className="herobanner-mobile-bike-image">
+                        <img src={currentImageo} alt="scooter" />
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
 
 
             <div className="locate-box-main">

@@ -23,6 +23,10 @@ p {
 .elcetric-banglore-page-blank-div {
     padding: 83px 0 0 0;
     display: block;
+
+    @media (max-width:1024px) {
+        display: none;
+    }
 }
 
 
@@ -34,6 +38,11 @@ p {
     position: relative;
     width: 100%;
     height: 100%;
+    display: block;
+
+    @media (max-width:1024px) {
+        display: none;
+    }
 
     .herobanner-main {
 
@@ -151,9 +160,146 @@ p {
     }
 }
 
+.herobanner-mobile-scc {
+    display: none;
+
+    @media (max-width:1024px) {
+        display: block;
+    }
+
+    .herobanner-mobile-main {
+        background-image: url(../../assets/image/mobilebak.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 550px;
+        width: calc(100% - 8px - 32px);
+        padding: 18px 8px 8px 32px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width:576px) {
+            padding: 18px 8px 8px 20px;
+            width: calc(100% - 28px);
+        }
+
+        @media (max-width:300px) {
+            padding: 18px 8px 8px 20px;
+            height: 350px;
+            width: calc(100% - 28px);
+        }
+
+
+        .bounce-title-div-main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+                text-align: center;
+                font-size: 21px;
+                font-weight: 800;
+                font-family: "Montserrat", sans-serif;
+                color: #FFFFFF;
+                margin: 0 0 3px 0;
+            }
+        }
+
+        .bounce-pera-div-main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                text-align: center;
+                font-size: 12px;
+                font-weight: 400;
+                font-family: "Montserrat", sans-serif;
+                color: #FFFFFF;
+                margin: 0 0 10px 0;
+            }
+        }
+
+        .herobanner-mobile-button-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            button {
+                background: #ef404a;
+                width: 131px;
+                height: 36px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                border-radius: 2px;
+                color: #FFF;
+                font-size: 12px;
+                font-weight: 500;
+                font-family: "Poppins", sans-serif;
+                cursor: pointer;
+            }
+        }
+
+        .herobanner-mobile-bike-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media (max-width:400px) {
+                left: 0px;
+            }
+
+            img {
+                width: 100%;
+
+            }
+        }
+
+        .herobanner-mobile-image-changer-button-main-div {
+            position: absolute;
+            z-index: 9;
+            bottom: 8px;
+            right: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            width: 10px;
+
+            button {
+                background-color: #FFF;
+                height: 10px;
+                width: 10px;
+                border: none;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: .5s ease-in-out;
+            }
+
+            .active {
+                width: 10px;
+                height: 35px;
+                border: none;
+                border-radius: 10px;
+                background-color: #EF404A;
+                cursor: pointer;
+                transition: .5s ease-in-out;
+            }
+        }
+    }
+}
 
 .locate-box-main {
     margin: 70px 0;
+
+    @media (max-width: 576px) {
+        padding: 20px 10px;
+    }
 
     .locate-box-container {
         max-width: 1200px;
@@ -164,6 +310,14 @@ p {
             background: linear-gradient(177.61deg, #FFE7CD 2%, #FCB9A2 124.85%);
             padding: 45px 36px 45px 35px;
             border-radius: 8px;
+
+            @media (max-width:1024px) {
+                padding: 35px 25px;
+            }
+
+            @media (max-width:768px) {
+                padding: 25px 15px;
+            }
 
             .locate-title-main {
                 display: flex;
@@ -177,14 +331,34 @@ p {
                     line-height: 40px;
                     font-weight: 700;
                     font-family: "Montserrat", sans-serif;
+                    text-align: center;
+
+                    @media (max-width:576px) {
+                        font-size: 24px;
+                        line-height: 32px;
+                    }
                 }
             }
+
 
             .state-city-inputss-main-div {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 align-items: end;
                 gap: 23px;
+
+                @media (max-width:1024px) {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+
+                @media (max-width:768px) {
+                    grid-template-columns: 1fr;
+                    gap: 15px;
+                }
+
+                @media (max-width:768px) {
+                    gap: 10px;
+                }
 
                 .stat-input-main {
                     text-align: left;
@@ -196,6 +370,11 @@ p {
                         font-family: "Montserrat", sans-serif;
                         color: #282828;
                         margin: 0 0 10px 0;
+
+                        @media (max-width:576px) {
+                            font-size: 16px;
+                            line-height: 20px;
+                        }
                     }
 
                     select {
@@ -214,13 +393,17 @@ p {
                         line-height: 18px;
                         text-align: left;
 
-
                         &:focus {
                             outline: none;
                         }
+
+                        @media (max-width:576px) {
+                            height: 50px;
+                            font-size: 12px;
+                            padding: 15px 10px;
+                        }
                     }
                 }
-
 
                 button {
                     width: 100%;
@@ -238,7 +421,7 @@ p {
                     font-size: 20px;
                     font-weight: 600;
                     line-height: 24.38px;
-                    text-align: left;
+                    text-align: center;
                     transition: .5s ease-in-out;
 
                     &:focus {
@@ -250,12 +433,22 @@ p {
                         background: #FFF;
                         color: #EF404A;
                     }
+
+                    @media (max-width: 768px) {
+                        font-size: 18px;
+                        height: 48px;
+                    }
+
+                    @media (max-width:576px) {
+                        font-size: 16px;
+                        height: 44px;
+                    }
                 }
             }
         }
     }
-}
 
+}
 
 .card-section-main-banglore-main {
     background: linear-gradient(0deg, #FFF1EB 0%, #ACE0F9 100%);
@@ -271,6 +464,16 @@ p {
             grid-template-columns: repeat(3, 1fr);
             gap: 47px;
             align-items: center;
+
+            @media (max-width: 992px) {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+
+            @media (max-width: 768px) {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
 
             .card-box-one-main {
                 padding: 15px 15px;
@@ -298,6 +501,11 @@ p {
                         text-align: left;
                         color: #282828;
                         margin: 0 0 10px 0;
+
+                        @media (max-width: 768px) {
+                            font-size: 16px;
+                            line-height: 24px;
+                        }
                     }
 
                     .location-div-main {
@@ -315,6 +523,11 @@ p {
                             text-align: left;
                             color: #6C6C6C;
                             max-width: 195px;
+
+                            @media (max-width: 768px) {
+                                font-size: 14px;
+                                line-height: 21px;
+                            }
                         }
                     }
 
@@ -332,6 +545,11 @@ p {
                             line-height: 19px;
                             text-align: left;
                             color: #6C6C6C;
+
+                            @media (max-width: 768px) {
+                                font-size: 14px;
+                                line-height: 21px;
+                            }
                         }
                     }
 
@@ -365,6 +583,12 @@ p {
 
                             &:focus {
                                 outline: none;
+                            }
+
+                            @media (max-width: 768px) {
+                                font-size: 16px;
+                                line-height: 22px;
+                                height: 45px;
                             }
                         }
                     }
