@@ -1,4 +1,4 @@
-![Screenshot 2024-05-27 182158](https://github.com/krishvaghasiya705/bounce-infinity/assets/146411007/7552e0c6-61fe-4e04-a41f-7b2a0bc6525c)
+![Screenshot_27-5-2024_182757_bounce-infinity vercel app](https://github.com/krishvaghasiya705/bounce-infinity/assets/146411007/b7f8742b-7c83-44b4-8477-0d9b6665940a)
 
 # Getting Started with Create React App
 
