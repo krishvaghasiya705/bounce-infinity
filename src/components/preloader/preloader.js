@@ -6,9 +6,9 @@ const Loader = () => {
   return (
     <div>
       <div className="preloader-div-main">
-        <div class="container">
-          <span class="text1">Welcome in</span>
-          <span class="text2">Bounce Infinity</span>
+        <div className="container">
+          <span className="text1">Welcome in</span>
+          <span className="text2">Bounce Infinity</span>
         </div>
       </div>
     </div>
