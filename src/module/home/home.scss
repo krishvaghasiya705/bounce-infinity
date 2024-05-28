@@ -1070,38 +1070,62 @@ p {
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: end;
         align-items: end;
         height: 100%;
         padding: 0;
 
-        img {
+        .image-container-sc {
             width: 100%;
+            height: 363px;
+            overflow: hidden;
+            position: relative;
             margin: 100px 0 0 0;
+
+            img {
+                max-width: 535px;
+                height: 363px;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                transition: transform 0.5s ease-in-out;
+            }
         }
 
-        .pagination-button-div-main {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 12px;
-            margin: 15px 0 20px 0;
+        .slide-sc img {
+            transform: translateX(200%);
+        }
 
-            button {
-                width: 12px;
-                height: 12px;
-                background: #FFFFFF;
-                border: none;
-                border-radius: 50%;
-                cursor: pointer;
+        .paginaation-button-div-main {
+            width: 100%;
 
-                &:nth-child(3n + 1) {
+            .pagination-button-div-main {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 12px;
+                margin: 15px 0 20px 0;
+
+                button {
+                    width: 12px;
+                    height: 12px;
+                    background: #FFFFFF;
+                    border: none;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    transition: .5s ease-in-out;
+                }
+
+                .active {
                     width: 24px;
                     height: 24px;
                     background: #FFFFFF;
                     border: 6px solid #FF0A0F;
                     border-radius: 50%;
                     cursor: pointer;
+                    transition: .5s ease-in-out;
                 }
             }
         }

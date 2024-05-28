@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import './home.scss';
 import Faq from "../../common/faq"
 import scootyone from "../../assets/image/scooty1.png";
@@ -13,7 +13,9 @@ import prdprzone from "../../assets/cardimage/Limited Edition Sparkle Black r-l 
 import prdprztwo from "../../assets/cardimage/E1 SPORTY RED 3.png";
 import prdprzthreee from "../../assets/image/E1grey.png";
 import rupees from "../../assets/cardimage/Vector.png";
-import redscooter from "../../assets/pricingimage/redscooter.png";
+import scooty1 from "../../assets/pricingimage/redscooter.png";
+import scooty2 from "../../assets/image/scooty2.png";
+import scooty3 from "../../assets/image/scooty3.png";
 import rightarrow from "../../assets/image/rightarrow.png";
 import batterycharginggirl from "../../assets/image/batterycharginggirl.png";
 import person from "../../assets/image/person.png";
@@ -24,12 +26,16 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.scss";
 import "slick-carousel/slick/slick-theme.scss";
 import rightarrowt from "../../assets/image/rightarrowt.png"
-import { Link } from 'react-router-dom';  
+import { Link } from 'react-router-dom';
 // import { FaHome } from "react-icons/fa";
 
 
 
-
+const images = [
+  scooty1,
+  scooty2,
+  scooty3
+];
 
 
 
@@ -72,6 +78,29 @@ export default function Home() {
   const handleClick3 = () => {
     setShowMore3(!showMore3);
   };
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isSliding, setIsSliding] = useState(false);
+
+  const changeImage = useCallback((index) => {
+    if (isSliding) return;
+
+    setIsSliding(true);
+
+    setTimeout(() => {
+      setCurrentImageIndex(index);
+      setIsSliding(false);
+    }, 500);
+  }, [isSliding]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const nextIndex = (currentImageIndex + 1) % images.length;
+      changeImage(nextIndex);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [currentImageIndex, changeImage]);
 
 
   const settings = {
@@ -341,12 +370,14 @@ export default function Home() {
 
       <div className="pricing-section-main">
         <div className="pricing-section-first-box-background-main">
-          <div>
-            <img src={redscooter} alt="redscooter" />
+          <div className={`image-container-sc ${isSliding ? 'slide-sc' : ''}`}>
+            <img src={images[currentImageIndex]} alt="sliding" />
+          </div>
+          <div className="paginaation-button-div-main">
             <div className="pagination-button-div-main">
-              <button type='submit'></button>
-              <button type='submit'></button>
-              <button type='submit'></button>
+              {images.map((_, index) => (
+                <button key={index} className={index === currentImageIndex ? 'active' : ''} onClick={() => changeImage(index)}></button>
+              ))}
             </div>
           </div>
         </div>

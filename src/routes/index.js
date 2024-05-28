@@ -15,7 +15,8 @@ import Accordian from "../module/question";
 import Banglore from "../module/banglore";
 import Electricscooter from "../module/elctrciscooterpage";
 import Electricbanglore from "../module/elctricbanglorepage";
-import Errorpage from "../components/errorpage"
+import Errorpage from "../components/errorpage";
+import Imageslide from "../module/imageslide";
 
 const router = createBrowserRouter([
     {
@@ -87,6 +88,10 @@ const router = createBrowserRouter([
     {
         path: "Electricbanglore",
         element: <Electricbanglore />
+    },
+    {
+        path: "Imageslide",
+        element: <Imageslide />
     }
 ])
 
