@@ -1,3 +1,5 @@
+![Screenshot_27-5-2024_182757_bounce-infinity vercel app](https://github.com/krishvaghasiya705/bounce-infinity/assets/146411007/b7f8742b-7c83-44b4-8477-0d9b6665940a)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -10,6 +12,7 @@ In the project directory, you can run:
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
