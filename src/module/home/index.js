@@ -446,126 +446,123 @@ export default function Home() {
       </div>
 
 
-
-
-        <div className="dealership-sction-main">
-          <div className="container-dealer-ship-main">
-            <div className="dealer-ship-title-main">
-              <h1>Dealership Section</h1>
+      <div class="dealership-sction-main" data-aos="fade-up">
+        <div class="container-dealer-ship-main">
+          <div class="dealer-ship-title-main">
+            <h1>Dealership Section</h1>
+          </div>
+          <div class="dealer-ship-table-main">
+            <div class="pincode-div-main" data-aos="fade-up">
+              <div class="pincode-title-main">
+                <h2>PIN Code</h2>
+                <div class="pincode-inp-main">
+                  <input type="text" placeholder="Enter PIN Code" />
+                  <button type="submit">GO</button>
+                </div>
+              </div>
+              <h3 data-aos="fade-up">OR</h3>
+              <div class="detect-nearby-button" data-aos="fade-up">
+                <button type="submit">Detect Nearby Dealers</button>
+              </div>
             </div>
-            <div className="dealer-ship-table-main">
-              <div className="pincode-div-main">
-                <div className="pincode-title-main">
-                  <h2>PIN Code</h2>
-                  <div className="pincode-inp-main">
-                    <input type="text" placeholder='Enter PIN Code' />
-                    <button type='submit'>GO</button>
+
+            <div class="dtect-border-btm" data-aos="fade-up"></div>
+
+            <div class="llp-boxes-main" data-aos="fade-up">
+              <div className="llp-box-one">
+                <h4>Patel Motors Pvt LLP</h4>
+                <div className="marcus-name-div-main">
+                  <p>Marcus Dias</p>
+                  <img src={rightarrow} alt="rightarrow" />
+                  <div className="right-arrow-div-hvr">
+                    <img src={rightarrowt} alt="rightarrowt" />
                   </div>
                 </div>
-                <h3>OR</h3>
-                <div className="detect-nearby-button">
-                  <button type='submit'>Detect Nearby Dealrs</button>
-                </div>
+                <span>1.4 km</span>
               </div>
 
-              <div className="dtect-border-btm"></div>
-
-              <div className="llp-boxes-main">
-                <div className="llp-box-one">
-                  <h4>Patel Motors Pvt LLP</h4>
-                  <div className="marcus-name-div-main">
-                    <p>Marcus Dias</p>
-                    <img src={rightarrow} alt="rightarrow" />
-                    <div className="right-arrow-div-hvr">
-                      <img src={rightarrowt} alt="rightarrowt" />
-                    </div>
+              <div className="llp-box-one">
+                <h4>Patel Motors Pvt LLP</h4>
+                <div className="marcus-name-div-main">
+                  <p>Marcus Dias</p>
+                  <img src={rightarrow} alt="rightarrow" />
+                  <div className="right-arrow-div-hvr">
+                    <img src={rightarrowt} alt="rightarrowt" />
                   </div>
-                  <span>1.4 km</span>
                 </div>
-
-                <div className="llp-box-one">
-                  <h4>Patel Motors Pvt LLP</h4>
-                  <div className="marcus-name-div-main">
-                    <p>Marcus Dias</p>
-                    <img src={rightarrow} alt="rightarrow" />
-                    <div className="right-arrow-div-hvr">
-                      <img src={rightarrowt} alt="rightarrowt" />
-                    </div>
-                  </div>
-                  <span>1.4 km</span>
-                </div>
-
-                <div className="llp-box-one">
-                  <h4>Patel Motors Pvt LLP</h4>
-                  <div className="marcus-name-div-main">
-                    <p>Marcus Dias</p>
-                    <img src={rightarrow} alt="rightarrow" />
-                    <div className="right-arrow-div-hvr">
-                      <img src={rightarrowt} alt="rightarrowt" />
-                    </div>
-                  </div>
-                  <span>1.4 km</span>
-                </div>
-
-
-                <div className="llp-box-one">
-                  <h4>Patel Motors Pvt LLP</h4>
-                  <div className="marcus-name-div-main">
-                    <p>Marcus Dias</p>
-                    <img src={rightarrow} alt="rightarrow" />
-                    <div className="right-arrow-div-hvr">
-                      <img src={rightarrowt} alt="rightarrowt" />
-                    </div>
-                  </div>
-                  <span>1.4 km</span>
-                </div>
-
-
-                <div className="llp-box-one">
-                  <h4>Patel Motors Pvt LLP</h4>
-                  <div className="marcus-name-div-main">
-                    <p>Marcus Dias</p>
-                    <img src={rightarrow} alt="rightarrow" />
-                    <div className="right-arrow-div-hvr">
-                      <img src={rightarrowt} alt="rightarrowt" />
-                    </div>
-                  </div>
-                  <span>1.4 km</span>
-                </div>
-
-
-                <div className="llp-box-one">
-                  <h4>Patel Motors Pvt LLP</h4>
-                  <div className="marcus-name-div-main">
-                    <p>Marcus Dias</p>
-                    <img src={rightarrow} alt="rightarrow" />
-                    <div className="right-arrow-div-hvr">
-                      <img src={rightarrowt} alt="rightarrowt" />
-                    </div>
-                  </div>
-                  <span>1.4 km</span>
-                </div>
+                <span>1.4 km</span>
               </div>
 
-              <div className="show-more-mobile-button-div">
-                <h1>Show more</h1>
+              <div className="llp-box-one">
+                <h4>Patel Motors Pvt LLP</h4>
+                <div className="marcus-name-div-main">
+                  <p>Marcus Dias</p>
+                  <img src={rightarrow} alt="rightarrow" />
+                  <div className="right-arrow-div-hvr">
+                    <img src={rightarrowt} alt="rightarrowt" />
+                  </div>
+                </div>
+                <span>1.4 km</span>
               </div>
+
+
+              <div className="llp-box-one">
+                <h4>Patel Motors Pvt LLP</h4>
+                <div className="marcus-name-div-main">
+                  <p>Marcus Dias</p>
+                  <img src={rightarrow} alt="rightarrow" />
+                  <div className="right-arrow-div-hvr">
+                    <img src={rightarrowt} alt="rightarrowt" />
+                  </div>
+                </div>
+                <span>1.4 km</span>
+              </div>
+
+
+              <div className="llp-box-one">
+                <h4>Patel Motors Pvt LLP</h4>
+                <div className="marcus-name-div-main">
+                  <p>Marcus Dias</p>
+                  <img src={rightarrow} alt="rightarrow" />
+                  <div className="right-arrow-div-hvr">
+                    <img src={rightarrowt} alt="rightarrowt" />
+                  </div>
+                </div>
+                <span>1.4 km</span>
+              </div>
+
+
+              <div className="llp-box-one">
+                <h4>Patel Motors Pvt LLP</h4>
+                <div className="marcus-name-div-main">
+                  <p>Marcus Dias</p>
+                  <img src={rightarrow} alt="rightarrow" />
+                  <div className="right-arrow-div-hvr">
+                    <img src={rightarrowt} alt="rightarrowt" />
+                  </div>
+                </div>
+                <span>1.4 km</span>
+              </div>
+            </div>
+
+            <div class="show-more-mobile-button-div" data-aos="fade-up">
+              <h1>Show more</h1>
             </div>
           </div>
-
         </div>
+      </div>
 
 
 
 
       <div className="emi-calculator-div-main">
-        <div className='emi-container'>
+        <div className='emi-container' data-aos="fade-up">
           <div className="emi-calculator-title">
             <h1>EMI Calculator</h1>
           </div>
           <div className="loan-payment-boxes-main">
             <div>
-              <div className="loan-payment-box-one">
+              <div className="loan-payment-box-one" data-aos="fade-up">
                 <div className="loan-ammount-box-one">
                   <div className="loan-ammount-title">
                     <h2>Loan Amount</h2>
@@ -588,7 +585,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="loan-payment-box-two">
+            <div className="loan-payment-box-two" data-aos="fade-up">
               <div className="payment-div-main-flex">
                 <div className="payment-div-one-main">
                   <div className="down-payment-div-main">
@@ -608,7 +605,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="down-payment-div-main-last">
+          <div className="down-payment-div-main-last" data-aos="fade-up">
             <div className="down-paymane-div-one">
               <h1>Down Payment</h1>
               <input type="number" placeholder='Enter amount' />
@@ -622,7 +619,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="benefits-box-main">
+          <div className="benefits-box-main" data-aos="fade-up">
             <div className="benefits-title-main">
               <div className="dot-main"></div>
               <h1>Benefits of Easy Finance</h1>
@@ -637,24 +634,22 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-
       </div>
 
 
 
 
-      <div className="battery-section-main">
-        <div className="container-battery">
-          <div className="portable-battery-title-main">
+      <div class="battery-section-main" data-aos="fade-up">
+        <div class="container-battery">
+          <div class="portable-battery-title-main">
             <h4>Portable battery</h4>
           </div>
-          <div className="charge-pera-box-main-flex">
-            <div className="charge-pera-box-one">
+          <div class="charge-pera-box-main-flex">
+            <div class="charge-pera-box-one" data-aos="fade-right">
               <h5>Charge everywhere at any plug point.</h5>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
             </div>
-            <div className="charge-pera-box-two">
+            <div class="charge-pera-box-two" data-aos="fade-left">
               <img src={batterycharginggirl} alt="batterycharginggirl" />
             </div>
           </div>
@@ -664,7 +659,7 @@ export default function Home() {
 
 
       <div className="client-review-slider-main-background">
-        <div className="conatiner-review">
+        <div className="conatiner-review" data-aos="fade-up">
           <div className="client-review-title-main">
             <h1>What Our clients are saying</h1>
           </div>
@@ -698,10 +693,11 @@ export default function Home() {
             <h1>Press Statement</h1>
           </div>
           <div className="press-card-div-main">
-            <div className="press-card-div-box-one">
+            <div className="press-card-div-box-one" data-aos="fade-up" data-aos-duration="1000">
               <img src={pressone} alt="pressone" />
               <h2>Lorem Ipsum</h2>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text {' '}
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text {' '}
                 <div className={`pera-active-more ${showMore ? 'show' : ''}`}>
                   Here is the second half of the paragraph. You can add more content here.
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -710,10 +706,11 @@ export default function Home() {
               <button type='button' onClick={handleClick}>{showMore ? 'Show Less' : 'View more'}</button>
             </div>
 
-            <div className="press-card-div-box-one">
+            <div className="press-card-div-box-one" data-aos="fade-up" data-aos-duration="1000">
               <img src={presstwo} alt="presstwo" />
               <h2>Lorem Ipsum</h2>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text {' '}
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text {' '}
                 <div className={`pera-active-more ${showMore2 ? 'show' : ''}`}>
                   Here is the second half of the paragraph. You can add more content here.
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -722,10 +719,11 @@ export default function Home() {
               <button type='button' onClick={handleClick2}>{showMore2 ? 'Show Less' : 'View more'}</button>
             </div>
 
-            <div className="press-card-div-box-one">
+            <div className="press-card-div-box-one" data-aos="fade-up" data-aos-duration="1000">
               <img src={pressthree} alt="pressthree" />
               <h2>Lorem Ipsum</h2>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text {' '}
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text {' '}
                 <div className={`pera-active-more ${showMore3 ? 'show' : ''}`}>
                   Here is the second half of the paragraph. You can add more content here.
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.

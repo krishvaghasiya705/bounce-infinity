@@ -41,17 +41,16 @@ const Faq = () => {
 
     return (
         <div>
-            <div className="faq-section-main">
-                <div className="faq-container">
-                    <div className="faq-title-main">
+            <div class="faq-section-main" data-aos="fade-up">
+                <div class="faq-container">
+                    <div class="faq-title-main">
                         <h1>Have Any Question?</h1>
                     </div>
                 </div>
 
-                <div className="accordian-container">
+                <div class="accordian-container">
                     <Accordion items={accordionItems} />
                 </div>
-
             </div>
         </div>
     )
