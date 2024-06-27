@@ -150,12 +150,12 @@ export default function Home() {
   return (
     <div>
 
-      <div className="herobanner-back-ground-align-main-div" ref={topRef} >
+      <div className="herobanner-back-ground-align-main-div" ref={topRef}>
         <div className="herobanner-back-ground-div-one">
           <div className="herobanner-title-main-div">
-            <h1>Bounce Infinity Electric Scooters</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum.</p>
-            <button type='submit'>Reserve for 499/-</button>
+            <h1 data-aos="fade-up">Bounce Infinity Electric Scooters</h1>
+            <p data-aos="fade-up" data-aos-delay="200">Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum.</p>
+            <button type="submit" data-aos="fade-up" data-aos-delay="400">Reserve for 499/-</button>
           </div>
           <div className="herobanner-image-changer-button-main-div">
             <button onClick={() => handleImageChange(scootyone)} type="button" className={currentImage === scootyone ? 'active' : ''}></button>
@@ -166,23 +166,24 @@ export default function Home() {
         <div className="herobanner-back-ground-div-two">
           <div className="scooter-back-div-ab-main">
             <div className="scooter-image-back-ground-main">
-              <img src={currentImage} alt="scooter" />
+              <img src={currentImage} alt="scooter" data-aos="zoom-in" />
             </div>
           </div>
         </div>
       </div>
 
 
-      <div className="herobanner-mobile">
+
+      <div className="herobanner-mobile" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-offset="200">
         <div className="herobanner-mobile-main">
           <div>
-            <div className="bounce-title-div-main">
+            <div className="bounce-title-div-main" data-aos="fade-down">
               <h1>Bounce Infinity Electric Scooters</h1>
             </div>
-            <div className="bounce-pera-div-main">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum.</p>
+            <div className="bounce-pera-div-main" data-aos="fade-up" data-aos-delay="200">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum.</p>
             </div>
-            <div className="herobanner-mobile-button-main">
+            <div className="herobanner-mobile-button-main" data-aos="fade-up" data-aos-delay="400">
               <button type='submit'>Reserve for 499/-</button>
             </div>
           </div>
@@ -191,28 +192,29 @@ export default function Home() {
             <button onClick={() => handleImageChange(scootytwo)} type="button" className={currentImage === scootytwo ? 'active' : ''}></button>
             <button onClick={() => handleImageChange(scootythree)} type="button" className={currentImage === scootythree ? 'active' : ''}></button>
           </div>
-          <div className="herobanner-mobile-bike-image">
+          <div className="herobanner-mobile-bike-image" data-aos="zoom-in" data-aos-delay="800">
             <img src={currentImage} alt="scooter" />
           </div>
         </div>
       </div>
 
+
       <div className="our-product-div-main">
-        <div className="container-prd">
+        <div className="container-prd" data-aos="fade-up">
           <div className="product-title-main">
             <h1>Our Products</h1>
           </div>
         </div>
 
         <div className="container-prd">
-          <div className="prodduct-scooter-image-div-main">
+          <div className="prodduct-scooter-image-div-main" data-aos="fade-up" data-aos-delay="100">
             <div className="product-type-box-side-main">
               <div className="product-type-box-one">
                 <button type='submit'>E1</button>
                 <button type='submit'>E1+</button>
                 <button type='submit'>E1LE</button>
               </div>
-              <div className="product-type-box-two">
+              <div className="product-type-box-two" data-aos="fade-right" data-aos-delay="200">
                 <button type='button'>
                   <span>
                     <p></p>
@@ -230,28 +232,27 @@ export default function Home() {
                     <p></p>
                   </span>
                 </strong>
-
               </div>
             </div>
-            <div className="prd-main-image-div">
-              <img src={groupscooterone} alt="groupscooterone" />
+            <div className="prd-main-image-div" data-aos="zoom-in" data-aos-delay="300">
+              <img data-aos="zoom-in" src={groupscooterone} alt="groupscooterone" />
               <div className="prd-detail-abt-box-side-main">
-                <div className="prd-detail-abt-box-one">
+                <div className="prd-detail-abt-box-one" data-aos="fade-left" data-aos-delay="400">
                   <img src={vectorone} alt="vectorone" />
                   <p>Real World Range</p>
                   <span>100+ km</span>
                 </div>
-                <div className="prd-detail-abt-box-two">
+                <div className="prd-detail-abt-box-two" data-aos="fade-left" data-aos-delay="500">
                   <img src={vectortwo} alt="vectortwo" />
                   <p>Top speed</p>
                   <span>55kmph</span>
                 </div>
-                <div className="prd-detail-abt-box-three">
+                <div className="prd-detail-abt-box-three" data-aos="fade-left" data-aos-delay="600">
                   <img src={vectorthree} alt="vectorthree" />
                   <p>Starts From</p>
                   <span>₹ 1,04,999</span>
                 </div>
-                <div className="prd-detail-abt-box-four">
+                <div className="prd-detail-abt-box-four" data-aos="fade-left" data-aos-delay="700">
                   <img src={vectorfour} alt="vectorfour" />
                   <p>Battery</p>
                   <span>2.5kWh</span>
@@ -261,29 +262,28 @@ export default function Home() {
           </div>
 
           <div className="product-scooter-mobile-div-main">
-            <div className="our-prd-mobile-div-inner">
-              <div className="prd-scooter-mobile-main">
+            <div className="our-prd-mobile-div-inner" data-aos="fade-up" data-aos-delay="100">
+              <div className="prd-scooter-mobile-main" data-aos="zoom-in" data-aos-delay="200">
                 <img src={groupscooterone} alt="groupscooterone" />
               </div>
 
-
               <div className="prd-detail-abt-box-side-main-mobile">
-                <div className="prd-detail-abt-box-one">
+                <div className="prd-detail-abt-box-one" data-aos="fade-left" data-aos-delay="300">
                   <img src={vectorone} alt="vectorone" />
                   <p>Real World Range</p>
                   <span>100+ km</span>
                 </div>
-                <div className="prd-detail-abt-box-two">
+                <div className="prd-detail-abt-box-two" data-aos="fade-left" data-aos-delay="400">
                   <img src={vectortwo} alt="vectortwo" />
                   <p>Top speed</p>
                   <span>55kmph</span>
                 </div>
-                <div className="prd-detail-abt-box-three">
+                <div className="prd-detail-abt-box-three" data-aos="fade-left" data-aos-delay="500">
                   <img src={vectorthree} alt="vectorthree" />
                   <p>Starts From</p>
                   <span>₹ 1,04,999</span>
                 </div>
-                <div className="prd-detail-abt-box-four">
+                <div className="prd-detail-abt-box-four" data-aos="fade-left" data-aos-delay="600">
                   <img src={vectorfour} alt="vectorfour" />
                   <p>Battery</p>
                   <span>2.5kWh</span>
@@ -291,23 +291,22 @@ export default function Home() {
               </div>
             </div>
           </div>
-
         </div>
       </div>
 
       <div className="container-prd">
-        <div className="reserve-button-div-main">
+        <div className="reserve-button-div-main" data-aos="fade-up">
           <button type='button'>Reserve Now</button>
         </div>
       </div>
 
-      <div className="compare-div-main-bacck-ground">
+      <div className="compare-div-main-bacck-ground" data-aos="fade-in">
         <div className="container-compare">
-          <div className="compare-title-main-div">
+          <div className="compare-title-main-div" data-aos="zoom-in">
             <h1>Comparison Between Models</h1>
           </div>
           <div className="product-and-detail-div-main">
-            <div className="product-prize-side-div-main">
+            <div className="product-prize-side-div-main" data-aos="fade-right">
               <div className="product-prize-title">
                 <h1>Our Products</h1>
               </div>
@@ -320,8 +319,7 @@ export default function Home() {
               </div>
             </div>
             <div className="product-image-card-and-prize-card-main">
-
-              <div className="product-prize-card-one">
+              <div className="product-prize-card-one" data-aos="flip-left">
                 <Link to={"/Banglore"}>
                   <img src={prdprzone} alt="prdprzone" />
                 </Link>
@@ -334,7 +332,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="product-prize-card-one">
+              <div className="product-prize-card-one" data-aos="flip-left">
                 <Link to={"/Banglore"}>
                   <img src={prdprztwo} alt="prdprztwo" />
                 </Link>
@@ -347,7 +345,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="product-prize-card-one">
+              <div className="product-prize-card-one" data-aos="flip-left">
                 <Link to={"/Banglore"}>
                   <img src={prdprzthreee} alt="prdprzthreee" />
                 </Link>
@@ -359,8 +357,6 @@ export default function Home() {
                   <h2>1.9kWh</h2>
                 </div>
               </div>
-
-
             </div>
           </div>
         </div>
@@ -368,7 +364,8 @@ export default function Home() {
 
 
 
-      <div className="pricing-section-main">
+
+      <div className="pricing-section-main" data-aos="fade-up">
         <div className="pricing-section-first-box-background-main">
           <div className={`image-container-sc ${isSliding ? 'slide-sc' : ''}`}>
             <img src={images[currentImageIndex]} alt="sliding" />
@@ -381,11 +378,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="pricing-section-second-box-main">
+        <div className="pricing-section-second-box-main" data-aos="fade-left">
           <div className="pricing-section-title-main">
-            <h1>Pricing Section</h1>
+            <h1 data-aos="fade-right">Pricing Section</h1>
           </div>
-          <div className="pricing-section-form-inp-one">
+          <div className="pricing-section-form-inp-one" data-aos="fade-up">
             <h2>Select Variant</h2>
             <div className="inp-first-main-div">
               <select name="Select Variant">
@@ -395,7 +392,7 @@ export default function Home() {
               </select>
             </div>
           </div>
-          <div className="pricing-section-form-inp-two">
+          <div className="pricing-section-form-inp-two" data-aos="fade-up">
             <div className="pricing-section-form-inp-two-inner-inp-one">
               <h3>Select State</h3>
               <select name="Select state">
@@ -411,7 +408,7 @@ export default function Home() {
               </select>
             </div>
           </div>
-          <div className="available-clr-title-main">
+          <div className="available-clr-title-main" data-aos="fade-up">
             <div className="avialable-clr-main">
               <h5>Available color</h5>
               <p>
@@ -443,119 +440,120 @@ export default function Home() {
             <div className="price-pera-main-two">
               <p>* The price displayed above excludes road taxes, insurance, registration and other charges. Click on Book Now to find the detailed price breakup.</p>
             </div>
-            <button type='submit'>Book Now</button>
+            <button type='submit' data-aos="flip-up">Book Now</button>
           </div>
         </div>
       </div>
 
 
 
-      <div className="dealership-sction-main">
-        <div className="container-dealer-ship-main">
-          <div className="dealer-ship-title-main">
-            <h1>Dealership Section</h1>
+
+        <div className="dealership-sction-main">
+          <div className="container-dealer-ship-main">
+            <div className="dealer-ship-title-main">
+              <h1>Dealership Section</h1>
+            </div>
+            <div className="dealer-ship-table-main">
+              <div className="pincode-div-main">
+                <div className="pincode-title-main">
+                  <h2>PIN Code</h2>
+                  <div className="pincode-inp-main">
+                    <input type="text" placeholder='Enter PIN Code' />
+                    <button type='submit'>GO</button>
+                  </div>
+                </div>
+                <h3>OR</h3>
+                <div className="detect-nearby-button">
+                  <button type='submit'>Detect Nearby Dealrs</button>
+                </div>
+              </div>
+
+              <div className="dtect-border-btm"></div>
+
+              <div className="llp-boxes-main">
+                <div className="llp-box-one">
+                  <h4>Patel Motors Pvt LLP</h4>
+                  <div className="marcus-name-div-main">
+                    <p>Marcus Dias</p>
+                    <img src={rightarrow} alt="rightarrow" />
+                    <div className="right-arrow-div-hvr">
+                      <img src={rightarrowt} alt="rightarrowt" />
+                    </div>
+                  </div>
+                  <span>1.4 km</span>
+                </div>
+
+                <div className="llp-box-one">
+                  <h4>Patel Motors Pvt LLP</h4>
+                  <div className="marcus-name-div-main">
+                    <p>Marcus Dias</p>
+                    <img src={rightarrow} alt="rightarrow" />
+                    <div className="right-arrow-div-hvr">
+                      <img src={rightarrowt} alt="rightarrowt" />
+                    </div>
+                  </div>
+                  <span>1.4 km</span>
+                </div>
+
+                <div className="llp-box-one">
+                  <h4>Patel Motors Pvt LLP</h4>
+                  <div className="marcus-name-div-main">
+                    <p>Marcus Dias</p>
+                    <img src={rightarrow} alt="rightarrow" />
+                    <div className="right-arrow-div-hvr">
+                      <img src={rightarrowt} alt="rightarrowt" />
+                    </div>
+                  </div>
+                  <span>1.4 km</span>
+                </div>
+
+
+                <div className="llp-box-one">
+                  <h4>Patel Motors Pvt LLP</h4>
+                  <div className="marcus-name-div-main">
+                    <p>Marcus Dias</p>
+                    <img src={rightarrow} alt="rightarrow" />
+                    <div className="right-arrow-div-hvr">
+                      <img src={rightarrowt} alt="rightarrowt" />
+                    </div>
+                  </div>
+                  <span>1.4 km</span>
+                </div>
+
+
+                <div className="llp-box-one">
+                  <h4>Patel Motors Pvt LLP</h4>
+                  <div className="marcus-name-div-main">
+                    <p>Marcus Dias</p>
+                    <img src={rightarrow} alt="rightarrow" />
+                    <div className="right-arrow-div-hvr">
+                      <img src={rightarrowt} alt="rightarrowt" />
+                    </div>
+                  </div>
+                  <span>1.4 km</span>
+                </div>
+
+
+                <div className="llp-box-one">
+                  <h4>Patel Motors Pvt LLP</h4>
+                  <div className="marcus-name-div-main">
+                    <p>Marcus Dias</p>
+                    <img src={rightarrow} alt="rightarrow" />
+                    <div className="right-arrow-div-hvr">
+                      <img src={rightarrowt} alt="rightarrowt" />
+                    </div>
+                  </div>
+                  <span>1.4 km</span>
+                </div>
+              </div>
+
+              <div className="show-more-mobile-button-div">
+                <h1>Show more</h1>
+              </div>
+            </div>
           </div>
-          <div className="dealer-ship-table-main">
-            <div className="pincode-div-main">
-              <div className="pincode-title-main">
-                <h2>PIN Code</h2>
-                <div className="pincode-inp-main">
-                  <input type="text" placeholder='Enter PIN Code' />
-                  <button type='submit'>GO</button>
-                </div>
-              </div>
-              <h3>OR</h3>
-              <div className="detect-nearby-button">
-                <button type='submit'>Detect Nearby Dealrs</button>
-              </div>
-            </div>
 
-            <div className="dtect-border-btm"></div>
-
-            <div className="llp-boxes-main">
-              <div className="llp-box-one">
-                <h4>Patel Motors Pvt LLP</h4>
-                <div className="marcus-name-div-main">
-                  <p>Marcus Dias</p>
-                  <img src={rightarrow} alt="rightarrow" />
-                  <div className="right-arrow-div-hvr">
-                    <img src={rightarrowt} alt="rightarrowt" />
-                  </div>
-                </div>
-                <span>1.4 km</span>
-              </div>
-
-              <div className="llp-box-one">
-                <h4>Patel Motors Pvt LLP</h4>
-                <div className="marcus-name-div-main">
-                  <p>Marcus Dias</p>
-                  <img src={rightarrow} alt="rightarrow" />
-                  <div className="right-arrow-div-hvr">
-                    <img src={rightarrowt} alt="rightarrowt" />
-                  </div>
-                </div>
-                <span>1.4 km</span>
-              </div>
-
-              <div className="llp-box-one">
-                <h4>Patel Motors Pvt LLP</h4>
-                <div className="marcus-name-div-main">
-                  <p>Marcus Dias</p>
-                  <img src={rightarrow} alt="rightarrow" />
-                  <div className="right-arrow-div-hvr">
-                    <img src={rightarrowt} alt="rightarrowt" />
-                  </div>
-                </div>
-                <span>1.4 km</span>
-              </div>
-
-
-              <div className="llp-box-one">
-                <h4>Patel Motors Pvt LLP</h4>
-                <div className="marcus-name-div-main">
-                  <p>Marcus Dias</p>
-                  <img src={rightarrow} alt="rightarrow" />
-                  <div className="right-arrow-div-hvr">
-                    <img src={rightarrowt} alt="rightarrowt" />
-                  </div>
-                </div>
-                <span>1.4 km</span>
-              </div>
-
-
-              <div className="llp-box-one">
-                <h4>Patel Motors Pvt LLP</h4>
-                <div className="marcus-name-div-main">
-                  <p>Marcus Dias</p>
-                  <img src={rightarrow} alt="rightarrow" />
-                  <div className="right-arrow-div-hvr">
-                    <img src={rightarrowt} alt="rightarrowt" />
-                  </div>
-                </div>
-                <span>1.4 km</span>
-              </div>
-
-
-              <div className="llp-box-one">
-                <h4>Patel Motors Pvt LLP</h4>
-                <div className="marcus-name-div-main">
-                  <p>Marcus Dias</p>
-                  <img src={rightarrow} alt="rightarrow" />
-                  <div className="right-arrow-div-hvr">
-                    <img src={rightarrowt} alt="rightarrowt" />
-                  </div>
-                </div>
-                <span>1.4 km</span>
-              </div>
-            </div>
-
-            <div className="show-more-mobile-button-div">
-              <h1>Show more</h1>
-            </div>
-          </div>
         </div>
-
-      </div>
 
 
 
