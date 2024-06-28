@@ -1,0 +1,446 @@
+* {
+    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.emi-calculator-div-main {
+    background: linear-gradient(225deg, #E3FDF5 0%, #FFE6FA 100%);
+    padding: 80px 20px;
+
+    @media (max-width:576px) {
+        padding: 80px 20px;
+    }
+
+    @media (max-width:1024px) {
+        padding: 80px 20px;
+    }
+
+    .emi-container {
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 0 20px;
+
+
+        .emi-calculator-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 0 70px 0;
+
+            h1 {
+                color: #282828;
+                font-size: 34px;
+                font-weight: 700;
+                font-family: "Montserrat", sans-serif;
+                padding: 0 0 10px 0;
+                border-bottom: 4px solid #FF0A0F;
+            }
+        }
+
+        .loan-payment-boxes-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 80px;
+            width: 100%;
+            margin: 0 0 40px 0;
+
+            @media (max-width:1024px) {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            @media (max-width:1100px) {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                justify-content: center;
+            }
+
+            @media (max-width:576px) {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .loan-payment-box-one {
+                width: 540px;
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+
+                @media (max-width:576px) {
+                    width: 500px;
+                }
+
+                @media (max-width:400px) {
+                    width: 250px;
+                }
+
+                @media (max-width:800px) {
+                    width: 100%;
+                }
+
+                .loan-ammount-box-one {
+                    width: 100%;
+
+                    .loan-ammount-title {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        h2 {
+                            color: #282828;
+                            font-size: 18px;
+                            font-weight: 600;
+                            font-family: "Montserrat", sans-serif;
+                        }
+
+                        p {
+                            color: #ef404a;
+                            font-size: 18px;
+                            font-weight: 600;
+                            font-family: "Montserrat", sans-serif;
+                        }
+                    }
+
+                    .loan-ammount-increase-line-main {
+                        width: 100%;
+                        position: relative;
+                        border-bottom: 4px solid #dcdcdce6;
+                        margin: 26px 0 0 0;
+
+                        .loan-ammount-increase-line-red-one {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100px;
+                            border-bottom: 4px solid #ef404a;
+                        }
+
+                        .loan-ammount-increase-line-red-two {
+                            position: absolute;
+                            top: -3px;
+                            left: 99px;
+                            width: 16px;
+                            height: 10px;
+                            background: #ef404a;
+                        }
+                    }
+                }
+            }
+
+            .loan-payment-box-two {
+                background: linear-gradient(225deg, #5D9FFF 0%, #B8DCFF 47.87%, #6BBBFF 100%);
+                padding: 30px 32px 31px 31px;
+                width: calc(540px - 63px);
+
+
+                @media (max-width:800px) {
+                    width: calc(100% - 63px);
+                }
+
+                .payment-div-main-flex {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+
+                    .payment-div-one-main {
+
+                        .down-payment-div-main {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            margin: 0 0 4px 0;
+
+                            h3 {
+                                color: #282828;
+                                font-size: 18px;
+                                font-weight: 600;
+                                font-family: "Montserrat", sans-serif;
+                            }
+
+                            p {
+                                display: flex;
+                                align-items: center;
+                                gap: 7px;
+                                color: #282828;
+                                font-size: 18px;
+                                font-weight: 600;
+                                font-family: "Montserrat", sans-serif;
+
+                                img {
+                                    width: 9px;
+                                    height: 15px;
+                                }
+                            }
+                        }
+
+                        p {
+                            color: #282828;
+                            font-size: 12px;
+                            font-weight: 400;
+                            font-family: "Montserrat", sans-serif;
+                        }
+                    }
+
+                    .payment-div-two-main {
+
+                        .down-payment-div-main {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            margin: 0 0 4px 0;
+
+                            h3 {
+                                color: #282828;
+                                font-size: 18px;
+                                font-weight: 600;
+                                font-family: "Montserrat", sans-serif;
+                            }
+
+                            p {
+                                display: flex;
+                                align-items: center;
+                                gap: 7px;
+                                color: #282828;
+                                font-size: 18px;
+                                font-weight: 600;
+                                font-family: "Montserrat", sans-serif;
+
+                                img {
+                                    width: 9px;
+                                    height: 15px;
+                                }
+                            }
+                        }
+
+                        p {
+                            color: #282828;
+                            font-size: 12px;
+                            font-weight: 400;
+                            font-family: "Montserrat", sans-serif;
+                        }
+                    }
+                }
+            }
+        }
+
+        .down-payment-div-main-last {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            gap: 80px;
+            margin: 0 0 30px 0;
+
+            @media (max-width:576px) {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 20px;
+            }
+
+            .down-paymane-div-one {
+
+                h1 {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #282828;
+                    font-family: "Montserrat", sans-serif;
+                    margin: 0 0 12px 0;
+                }
+
+                input {
+                    background-color: #FFFFFF;
+                    border: none;
+                    border-radius: 6px;
+                    padding: 19px 18px;
+                    width: calc(100% - 85px);
+
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    @media (max-width:576px) {
+                        width: calc(100% - 36px);
+                    }
+                }
+            }
+
+            .down-paymane-div-two {
+                text-align: right;
+
+                @media (max-width:576px) {
+                    text-align: left;
+                }
+
+                h1 {
+                    text-align: left;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #282828;
+                    font-family: "Montserrat", sans-serif;
+                    margin: 0 0 12px 48px;
+
+                    @media (max-width:576px) {
+                        margin: 0 0 12px 0;
+                    }
+                }
+
+                select {
+                    background-color: #FFFFFF;
+                    border: none;
+                    border-radius: 6px;
+                    padding: 19px 18px;
+                    width: calc(100% - 36px);
+                    outline: none;
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    @media (max-width:576px) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .benefits-box-main {
+            box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.15);
+            background: rgba(255, 255, 255, 1);
+            padding: 30px;
+
+            .benefits-title-main {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin: 0 0 25px 4px;
+
+                .dot-main {
+                    background-color: #ef404a;
+                    height: 20px;
+                    width: 20px;
+                    rotate: 45deg;
+                    cursor: pointer;
+                    transition: .5s ease-in-out;
+
+                    &:hover {
+                        rotate: 130deg;
+                        transition: .5s ease-in-out;
+                    }
+                }
+
+                h1 {
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 21.94px;
+                    color: #282828;
+                }
+            }
+
+            .benefits-types-div-main {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                align-items: center;
+                gap: 24px 120px;
+
+                @media (max-width:1200px) {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+
+                @media (max-width:1000px) {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+
+                @media (max-width:950px) {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+
+                @media (max-width:576px) {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+
+                @media (max-width:400px) {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+
+                p {
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: #575757;
+                    font-family: "Montserrat", sans-serif;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin: 0;
+                    width: 190px;
+
+                    span {
+                        background: #575757;
+                        height: 3px;
+                        width: 3px;
+                        border-radius: 50%;
+                    }
+
+                    @media (max-width:950px) {
+                        &:nth-child(6n + 3) {
+                            margin: 0 0 0 28px;
+
+                            @media (max-width:400px) {
+                                margin: 0;
+                            }
+
+                            @media (max-width:576px) {
+                                margin: 0;
+                            }
+                        }
+                    }
+
+
+                    &:nth-child(6n + 1) {
+                        margin: 0 0 0 28px;
+
+                        @media (max-width:400px) {
+                            margin: 0;
+                        }
+
+                        @media (max-width:576px) {
+                            margin: 0;
+                        }
+                    }
+
+                    &:nth-child(6n + 5) {
+                        margin: 0 0 0 28px;
+
+                        @media (max-width:400px) {
+                            margin: 0;
+                        }
+
+                        @media (max-width:576px) {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,472 @@
+* {
+    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.pricing-section-main {
+    margin: 100px 0;
+    background: linear-gradient(0deg, #FFF1EB 0%, #ACE0F9 100%);
+    display: grid;
+    grid-template-columns: 682px 1fr;
+
+    @media (max-width:1024px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media (max-width:1200px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pricing-section-first-box-background-main {
+        background-image: url(../../../assets/pricingimage/Rectangle13.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: end;
+        height: 100%;
+        padding: 0;
+
+        .image-container-sc {
+            width: 100%;
+            height: 363px;
+            overflow: hidden;
+            position: relative;
+            margin: 100px 0 0 0;
+
+            img {
+                max-width: 535px;
+                height: 363px;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                transition: transform 0.5s ease-in-out;
+
+                @media (max-width:1024px) {
+                    width: 300px;
+                    height: 250px;
+                }
+
+                @media (max-width:576px) {
+                    width: 250px;
+                    height: 200px;
+                }
+
+            }
+        }
+
+        .slide-sc img {
+            transform: translateX(200%);
+        }
+
+        .paginaation-button-div-main {
+            width: 100%;
+
+            .pagination-button-div-main {
+                height: 34px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 12px;
+                margin: 15px 0 20px 0;
+
+                button {
+                    width: 12px;
+                    height: 12px;
+                    background: #FFFFFF;
+                    border: none;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    transition: .5s ease-in-out;
+                }
+
+                .active {
+                    width: 24px;
+                    height: 24px;
+                    background: #FFFFFF;
+                    border: 6px solid #FF0A0F;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    transition: .5s ease-in-out;
+                }
+            }
+        }
+    }
+
+    .pricing-section-second-box-main {
+        padding: 80px 122px 80px 50px;
+
+        @media(max-width:1200px) {
+            padding: 80px 40px;
+        }
+
+        @media(max-width:576px) {
+            padding: 80px 40px;
+        }
+
+        @media (max-width:400px) {
+            padding: 80px 20px;
+        }
+
+        .pricing-section-title-main {
+            margin: 0 0 62px 0;
+
+            h1 {
+                font-family: "Montserrat", sans-serif;
+                font-size: 34px;
+                font-weight: 700;
+                color: #282828;
+                padding: 0 0 10px 0;
+                border-bottom: 4px solid #EF404A;
+                max-width: 271px;
+            }
+        }
+
+        .pricing-section-form-inp-one {
+
+            h2 {
+                font-family: "Montserrat", sans-serif;
+                font-size: 18px;
+                font-weight: 600;
+                color: #282828;
+                margin: 0 0 12px 0;
+            }
+
+            .inp-first-main-div {
+                width: 100%;
+                margin: 0 0 40px 0;
+
+                select {
+                    border: none;
+                    border-radius: 6px;
+                    background-color: #FFF;
+                    width: 100%;
+                    padding: 19px 18px 19px 18px;
+                    font-family: "Montserrat", sans-serif;
+                    outline: none;
+
+                    :focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+
+        .pricing-section-form-inp-two {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 26px;
+            margin: 0 0 45px 0;
+
+            @media (max-width:400px) {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            @media (max-width:576px) {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .pricing-section-form-inp-two-inner-inp-one {
+
+                h3 {
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #282828;
+                    margin: 0 0 12px 0;
+                }
+
+                select {
+                    width: 100%;
+                    border: none;
+                    border-radius: 6px;
+                    background-color: #FFF;
+                    width: 100%;
+                    padding: 19px 18px 19px 18px;
+                    font-family: "Montserrat", sans-serif;
+                    outline: none;
+
+                    :focus {
+                        outline: none;
+                    }
+                }
+            }
+
+            .pricing-section-form-inp-two-inner-inp-two {
+
+                h4 {
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #282828;
+                    margin: 0 0 12px 0;
+                }
+
+                select {
+                    width: 100%;
+                    border: none;
+                    border-radius: 6px;
+                    background-color: #FFF;
+                    width: 100%;
+                    padding: 19px 18px 19px 18px;
+                    font-family: "Montserrat", sans-serif;
+
+                    :focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+
+        .available-clr-title-main {
+
+            .avialable-clr-main {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 0 29px 0;
+
+                h5 {
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #282828;
+                    margin: 0;
+                }
+
+                p {
+                    display: flex;
+                    justify-content: center;
+                    gap: 19px;
+                    margin: 0;
+
+                    span {
+                        background: #FF0A0F;
+                        height: 30px;
+                        width: 30px;
+                        border-radius: 50%;
+                        margin: 0;
+
+                        &:nth-child(3n + 2) {
+                            background: #000;
+                        }
+
+                        &:nth-child(3n + 3) {
+                            background: #cdbdb4;
+                        }
+                    }
+                }
+            }
+
+            .showroom-prize-div-main {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 0 24px 0;
+
+                h6 {
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #282828;
+                    margin: 0;
+                }
+
+                p {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #282828;
+                    margin: 0;
+
+                    img {
+                        width: 7px;
+                        height: 13px;
+                        margin: 0;
+                    }
+                }
+            }
+
+            .fame-pera-div-main {
+                margin: 0 0 24px 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                p {
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #282828;
+                    margin: 0;
+                }
+
+                span {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #282828;
+                    margin: 0;
+
+                    img {
+                        width: 7px;
+                        height: 13px;
+                        margin: 0;
+                    }
+                }
+            }
+
+            .subsidy-pera-div-main {
+                margin: 0 0 24px 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                h1 {
+                    margin: 0;
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #282828;
+                }
+
+                span {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #282828;
+                    margin: 0;
+
+                    img {
+                        width: 7px;
+                        height: 13px;
+                        margin: 0;
+                    }
+                }
+            }
+
+            .border-div-prz-btm {
+                border-bottom: 1px solid #7d8fa666;
+            }
+
+            .effective-pera-main {
+                margin: 24px 0 30px 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                h2 {
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #282828;
+                }
+
+                span {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #282828;
+                    margin: 0;
+
+                    img {
+                        width: 7px;
+                        height: 13px;
+                        margin: 0;
+                    }
+                }
+            }
+
+            .price-pera-main {
+                text-align: left;
+                margin: 0 0 12px 0;
+
+                p {
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #686868;
+                    margin: 0;
+                    line-height: 21px;
+                }
+            }
+
+            .price-pera-main-two {
+                text-align: left;
+                margin: 0 0 30px 0;
+
+                p {
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #686868;
+                    margin: 0;
+                    line-height: 21px;
+                }
+            }
+
+            button {
+                border: none;
+                border-radius: 4px;
+                width: 188px;
+                height: 54px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #FF0A0F;
+                font-size: 20px;
+                font-weight: 700;
+                font-family: "Montserrat", sans-serif;
+                color: #FFFFFF;
+                cursor: pointer;
+                transition: .5s ease-in-out;
+
+                &:hover {
+                    color: #FF0A0F;
+                    background: #FFFFFF;
+                    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.15);
+                    transition: .5s ease-in-out;
+                }
+            }
+        }
+    }
+}

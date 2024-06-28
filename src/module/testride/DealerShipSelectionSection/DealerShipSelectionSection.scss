@@ -1,0 +1,317 @@
+* {
+    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+.dealer-ship-selction-section-main {
+    background: linear-gradient(315deg, rgba(226, 209, 195, 0.9) 0%, rgba(253, 252, 251, 0.9) 100%);
+    padding: 80px 0;
+    margin: 0 0 100px 0;
+
+    @media (max-width:576px) {
+        padding: 80px 0 22px 0;
+    }
+
+    .dealer-ship-selction-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+
+        .dealer-ship-box-title-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 0 60px 0;
+
+            h3 {
+                color: #282828;
+                font-size: 34px;
+                font-weight: 700;
+                line-height: 41px;
+                font-family: "Montserrat", sans-serif;
+                padding: 0 0 10px 0;
+                border-bottom: 4px solid #ef404a;
+            }
+        }
+
+        .dealer-ship-selcetion-box-section-main {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            gap: 40px;
+            justify-content: center;
+
+            @media (max-width:576px) {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .dealer-ship-box-one {
+                height: -webkit-fill-available;
+                padding: 20px;
+                background: #FFFFFF;
+                border-radius: 6px;
+                border: none;
+                color: #000;
+                cursor: pointer;
+                transition: .5s ease-in-out;
+
+                .dealer-title-flx-main {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0 0 10px 0;
+
+                    h4 {
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 24px;
+                        font-family: "Montserrat", sans-serif;
+                        max-width: 384px;
+                    }
+
+                    img {
+                        width: 20px;
+                        height: 16px;
+                        display: block;
+                    }
+
+                    .side-hv {
+                        display: none;
+
+                        img {
+                            width: 20px;
+                            height: 16px;
+                        }
+                    }
+                }
+
+                .location-dealer-flx-main {
+                    display: flex;
+                    gap: 12px;
+                    margin: 0 0 10px 0;
+
+                    img {
+                        width: 12px;
+                        height: 16px;
+                        display: block;
+                    }
+
+                    .loc-hv {
+                        display: none;
+
+                        img {
+                            width: 12px;
+                            height: 16px;
+                        }
+                    }
+
+                    p {
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 18px;
+                        font-family: "Montserrat", sans-serif;
+                    }
+                }
+
+                .phone-dealer-ship-flx-main {
+                    display: flex;
+                    align-items: center;
+                    gap: 11px;
+
+                    img {
+                        width: 13px;
+                        height: 13px;
+                        display: block;
+                    }
+
+                    .phon-hv {
+                        display: none;
+
+                        img {
+                            width: 13px;
+                            height: 13px;
+                        }
+                    }
+
+                    span {
+                        display: block;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 15px;
+                        font-family: "Montserrat", sans-serif;
+                    }
+                }
+
+                &:nth-child(6n + 5) {
+                    display: block;
+
+                    @media (max-width:576px) {
+                        display: none;
+                    }
+                }
+
+                &:nth-child(6n + 6) {
+                    display: block;
+
+                    @media (max-width:576px) {
+                        display: none;
+                    }
+                }
+
+
+                &:hover {
+                    padding: 20px;
+                    background: #ef404a;
+                    border-radius: 6px;
+                    border: none;
+                    color: #FFF;
+                    transition: .5s ease-in-out;
+
+                    .dealer-title-flx-main {
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 0 0 10px 0;
+
+                        h4 {
+                            font-size: 16px;
+                            font-weight: 700;
+                            line-height: 24px;
+                            font-family: "Montserrat", sans-serif;
+                            max-width: 384px;
+                        }
+
+                        img {
+                            width: 20px;
+                            height: 16px;
+                            display: none;
+                        }
+
+                        .side-hv {
+                            display: block;
+
+                            img {
+                                width: 20px;
+                                height: 16px;
+                                display: block;
+                            }
+                        }
+                    }
+
+                    .location-dealer-flx-main {
+                        display: flex;
+                        gap: 12px;
+                        margin: 0 0 10px 0;
+
+                        img {
+                            width: 12px;
+                            height: 16px;
+                            display: none;
+                        }
+
+                        .loc-hv {
+                            display: block;
+
+                            img {
+                                width: 12px;
+                                height: 16px;
+                                display: block;
+                            }
+                        }
+
+                        p {
+                            font-size: 12px;
+                            font-weight: 400;
+                            line-height: 18px;
+                            font-family: "Montserrat", sans-serif;
+                        }
+                    }
+
+                    .phone-dealer-ship-flx-main {
+                        display: flex;
+                        align-items: center;
+                        gap: 11px;
+
+                        img {
+                            width: 13px;
+                            height: 13px;
+                            display: none;
+                        }
+
+                        .phon-hv {
+                            display: block;
+
+                            img {
+                                width: 13px;
+                                height: 13px;
+                                display: block;
+                            }
+                        }
+
+                        span {
+                            display: block;
+                            font-size: 12px;
+                            font-weight: 400;
+                            line-height: 15px;
+                            font-family: "Montserrat", sans-serif;
+                        }
+                    }
+
+                    &:nth-child(6n + 5) {
+                        display: block;
+
+                        @media (max-width:576px) {
+                            display: none;
+                        }
+                    }
+
+                    &:nth-child(6n + 6) {
+                        display: block;
+
+                        @media (max-width:576px) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .show-more-nn {
+            display: none;
+
+            .show-more-div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 22px 0 0 0;
+
+                a {
+                    color: #FF0A0F;
+                    font-size: 15px;
+                    font-weight: 600;
+                    line-height: 19px;
+                    font-family: "Montserrat", sans-serif;
+                }
+
+            }
+
+            @media (max-width:576px) {
+                display: block;
+            }
+        }
+    }
+}

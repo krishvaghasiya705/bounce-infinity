@@ -1,0 +1,350 @@
+* {
+    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+.herobanner-back-ground-align-main-div {
+    display: grid;
+    grid-template-columns: 614px 1fr;
+    align-items: center;
+    gap: 0px;
+
+    @media (max-width:576px) {
+        display: none;
+    }
+
+    @media (max-width:800px) {
+        display: none;
+    }
+
+    @media (max-width:1024px) {
+        grid-template-columns: 508px 1fr;
+    }
+
+    @media (max-width:950px) {
+        grid-template-columns: 400px 1fr;
+    }
+
+    .herobanner-back-ground-div-one {
+        background-color: #141414;
+        height: calc(742px - 30px);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        padding: 0 0 30px 0;
+        position: relative;
+
+        @media (max-width:950px) {
+            height: calc(600px - 30px);
+        }
+
+        .herobanner-image-changer-button-main-div {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            button {
+                background-color: #FFF;
+                height: 10px;
+                width: 10px;
+                border: none;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: .5s ease-in-out;
+            }
+
+            .active {
+                width: 35px;
+                height: 10px;
+                border: none;
+                border-radius: 10px;
+                background-color: #EF404A;
+                cursor: pointer;
+                transition: .5s ease-in-out;
+            }
+        }
+
+
+        .herobanner-title-main-div {
+            background: rgba(0, 0, 0, 0.18);
+            padding: 55px 35px 54.99px 120px;
+            position: absolute;
+            top: 149px;
+            left: 0;
+            width: calc(641px - 155px);
+            z-index: 99;
+
+            @media (max-width:1024px) {
+                padding: 55px 35px 54.99px 50px;
+            }
+
+            @media (max-width:950px) {
+                width: 340px;
+                top: 95px;
+                padding: 55px 35px 54.99px 35px;
+            }
+
+            h1 {
+                font-family: "Montserrat", sans-serif;
+                font-size: 48px;
+                font-weight: 800;
+                color: #FFFFFF;
+                max-width: 459px;
+                line-height: 58px;
+
+                @media (max-width:950px) {
+                    font-size: 30px;
+                }
+            }
+
+            p {
+                font-family: "Poppins", sans-serif;
+                font-size: 22px;
+                font-weight: 400;
+                max-width: 454px;
+                color: #FFFFFF;
+                margin: 15px 0 25px 0;
+                line-height: 36px;
+            }
+
+            button {
+                background: #EF404A;
+                border: none;
+                width: 228px;
+                height: 54px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #FFFFFF;
+                font-size: 20px;
+                font-weight: 500;
+                font-family: "Poppins", sans-serif;
+                cursor: pointer;
+                transition: .5s ease-in-out;
+
+                &:hover {
+                    color: #EF404A;
+                    background: #FFFFFF;
+                    border-radius: 6px;
+                    transition: .5s ease-in-out;
+                }
+            }
+        }
+    }
+
+    .herobanner-back-ground-div-two {
+        background-color: #FFF;
+        width: 100%;
+        height: 742px;
+        position: relative;
+
+        @media (max-width:950px) {
+            height: 600px;
+        }
+
+        .scooter-back-div-ab-main {
+            position: absolute;
+            top: 98px;
+            left: 0;
+            width: 100%;
+
+            .scooter-image-back-ground-main {
+                margin: 0 0 0 -85px;
+                padding: 96px 0;
+                background-image: url(../../../assets/image/mainback.png);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: calc(546px - 96px - 96px);
+                transition: 0.5s ease-in-out;
+
+
+                img {
+                    transition: 0.5s ease-in-out;
+                    animation-delay: 0.2s;
+
+                    @media (max-width:1200px) {
+                        width: 100%;
+                    }
+
+                    @media (max-width:1024px) {
+                        width: 100%;
+                    }
+
+                    @media (max-width:576px) {
+                        width: 100%;
+                    }
+                }
+
+                @media (max-width:1024px) {
+                    left: -37px;
+                    padding: 40px 0;
+                }
+            }
+        }
+    }
+}
+
+
+
+.herobanner-mobile {
+    display: none;
+
+    @media (max-width:800px) {
+        display: block;
+    }
+
+    @media (max-width:576px) {
+        display: block;
+    }
+
+    .herobanner-mobile-main {
+        background-image: url(../../../assets/image/mobilebak.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 550px;
+        width: calc(100% - 8px - 32px);
+        padding: 18px 8px 8px 32px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width:576px) {
+            padding: 18px 8px 8px 20px;
+            width: calc(100% - 28px);
+        }
+
+        @media (max-width:300px) {
+            padding: 18px 8px 8px 20px;
+            height: 350px;
+            width: calc(100% - 28px);
+        }
+
+
+        .bounce-title-div-main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+                text-align: center;
+                font-size: 21px;
+                font-weight: 800;
+                font-family: "Montserrat", sans-serif;
+                color: #FFFFFF;
+                margin: 0 0 3px 0;
+            }
+        }
+
+        .bounce-pera-div-main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                text-align: center;
+                font-size: 12px;
+                font-weight: 400;
+                font-family: "Montserrat", sans-serif;
+                color: #FFFFFF;
+                margin: 0 0 10px 0;
+            }
+        }
+
+        .herobanner-mobile-button-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            button {
+                background: #ef404a;
+                width: 131px;
+                height: 36px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                border-radius: 2px;
+                color: #FFF;
+                font-size: 12px;
+                font-weight: 500;
+                font-family: "Poppins", sans-serif;
+                cursor: pointer;
+            }
+        }
+
+        .herobanner-mobile-bike-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media (max-width:400px) {
+                left: 0px;
+            }
+
+            img {
+                width: 100%;
+
+            }
+        }
+
+        .herobanner-mobile-image-changer-button-main-div {
+            position: absolute;
+            z-index: 9;
+            bottom: 8px;
+            right: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            width: 10px;
+
+            button {
+                background-color: #FFF;
+                height: 10px;
+                width: 10px;
+                border: none;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: .5s ease-in-out;
+            }
+
+            .active {
+                width: 10px;
+                height: 35px;
+                border: none;
+                border-radius: 10px;
+                background-color: #EF404A;
+                cursor: pointer;
+                transition: .5s ease-in-out;
+            }
+        }
+    }
+}

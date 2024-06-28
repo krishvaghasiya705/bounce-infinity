@@ -1,0 +1,129 @@
+* {
+    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+.press-stm-section-main {
+    background: linear-gradient(180deg, #E3FDF5 0%, #FFE6FA 100%);
+    padding: 80px 0;
+
+    .container-press {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+
+        .press-title-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 0 60px 0;
+
+            h1 {
+                padding: 0 0 10px 0;
+                border-bottom: 4px solid #FF0A0F;
+                font-size: 34px;
+                font-weight: 700;
+                font-family: "Montserrat", sans-serif;
+                color: #282828;
+            }
+        }
+
+        .press-card-div-main {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 60px;
+
+            @media(max-width:1024px) {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            @media(max-width:1200px) {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            @media(max-width:576px) {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            @media(max-width:400px) {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 20px;
+            }
+
+            .press-card-div-box-one {
+
+                img {
+                    width: 100%;
+
+                    margin: 0 0 20px 0;
+                }
+
+                h2 {
+                    font-size: 24px;
+                    font-weight: 700;
+                    font-family: "Montserrat", sans-serif;
+                    color: #000;
+                    margin: 0 0 6px 0;
+                }
+
+                p {
+                    font-size: 12px;
+                    font-weight: 400;
+                    font-family: "Montserrat", sans-serif;
+                    color: #484848;
+                    margin: 0 0 12px 0;
+                    max-width: 351px;
+                    line-height: 20px;
+                    transition: .5s ease-in-out;
+
+                    .pera-active-more {
+                        max-height: 0;
+                        overflow: hidden;
+                        transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+                        opacity: 0;
+                    }
+
+                    .pera-active-more.show {
+                        max-height: 100px;
+                        opacity: 1;
+                    }
+                }
+
+                button {
+                    border: none;
+                    background: transparent;
+                    text-decoration: none;
+                    font-size: 14px;
+                    margin: 0;
+                    font-weight: 600;
+                    font-family: "Montserrat", sans-serif;
+                    color: #ef404a;
+                    transition: .5s ease-in-out;
+                }
+            }
+        }
+    }
+}

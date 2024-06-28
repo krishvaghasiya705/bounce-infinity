@@ -1,0 +1,143 @@
+* {
+    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+.book-ride-section-main {
+    position: relative;
+    z-index: 9;
+    margin: 80px 0 100px 0;
+
+    @media (max-width:576px) {
+        margin: -30px 0 100px 0;
+    }
+
+    .book-ride-section-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+
+        .book-ride-box-back-main {
+            background: linear-gradient(168.37deg, #FFE7CD 8.53%, #FCB9A2 96.91%);
+            width: calc(100% - 40px);
+            padding: 50px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .book-test-ride-title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 0 6px 0;
+
+                h1 {
+                    color: #ef404a;
+                    font-size: 34px;
+                    font-weight: 700;
+                    line-height: 41px;
+                    font-family: "Montserrat", sans-serif;
+                }
+            }
+
+
+            .experience-pera-main {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 0 22px 0;
+
+                p {
+                    color: #282828;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 18px;
+                    font-family: "Montserrat", sans-serif;
+                }
+            }
+
+            .test-ride-box-inner-input {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                margin: 0 0 22px 0;
+
+                input {
+                    width: 100%;
+                    padding: 14px 39px;
+                    border: none;
+                    border-radius: 6px;
+                    background-color: #FFF;
+                    color: #6c6c6cb3;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 18px;
+                    font-family: "Montserrat", sans-serif;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+
+                img {
+                    position: absolute;
+                    top: 14px;
+                    left: 15px;
+                }
+            }
+
+            .test-drive-loaction-boxes-main {
+                display: flex;
+                justify-content: center;
+                flex-wrap: nowrap;
+                align-items: center;
+                gap: 25px;
+
+                @media (max-width:800px) {
+                    flex-wrap: wrap;
+                }
+
+                button {
+                    background: #FFF;
+                    color: #282828;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 18px;
+                    font-family: "Montserrat", sans-serif;
+                    border: none;
+                    border-radius: 3px;
+                    padding: 12px 14px;
+                    cursor: pointer;
+                    transition: .5s ease-in-out;
+
+                    &:hover {
+                        background: #282828;
+                        color: #FFF;
+                        transition: .5s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}

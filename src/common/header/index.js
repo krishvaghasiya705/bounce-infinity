@@ -47,30 +47,29 @@ export default function Header() {
             <header ref={topRef}>
                 <div className="header-main">
                     <div className="header-container">
-                        <div className="header-contant">
-                            <div className="header-contant-logo">
+                        <div className="header-contant" data-aos="fade-up">
+                            <div className="header-contant-logo" data-aos="zoom-in">
                                 <Link to={"/"}>
                                     <img src={logo} alt="logo" />
                                 </Link>
                             </div>
                             <div className="header-contant-menu">
-                                <div className="header-contant-menu-ancer">
+                                <div className="header-contant-menu-ancer" data-aos="fade-right">
                                     <Link to="/" className={location.pathname === '/' || location.pathname === '/Banglore' ? 'active' : ''}>
                                         <p>Home</p>
                                         <div className="hover-brd-cls"></div>
                                     </Link>
                                 </div>
-                                <div className="header-contant-menu-ancer">
+                                <div className="header-contant-menu-ancer" data-aos="fade-right" data-aos-delay="100">
                                     <Link to="/Testride" className={location.pathname === '/Testride' ? 'active' : ''}>
                                         <p>Test Ride</p>
                                         <div className="hover-brd-cls"></div>
                                     </Link>
                                 </div>
-                                <div className="header-contant-menu-ancer">
+                                <div className="header-contant-menu-ancer" data-aos="fade-right" data-aos-delay="200">
                                     <Link id="dropdown-id-main-home" to="/Dealership" className={location.pathname === '/Dealership' || location.pathname === '/Dealershipride' ? 'active' : ''}>
                                         <a href="home">Dealerships</a>
                                         <span><IoChevronDown /></span>
-
                                         <div className="drop-down-box-main">
                                             <div className="drop-down-contant-box">
                                                 <div className="dropdown-contant-inner-box-one">
@@ -85,11 +84,10 @@ export default function Header() {
                                         </div>
                                     </Link>
                                 </div>
-                                <div className="header-contant-menu-ancer">
+                                <div className="header-contant-menu-ancer" data-aos="fade-right" data-aos-delay="300">
                                     <Link id="dropdown-id-main-home-h-two" to="/Financial" className={location.pathname === '/Financial' || location.pathname === '/Socialmedia' || location.pathname === '/Socialmediadetails' ? 'active' : ''}>
                                         <p>Pages</p>
                                         <span><IoChevronDown /></span>
-
                                         <div className="drop-down-box-main">
                                             <div className="drop-down-contant-box">
                                                 <div className="dropdown-contant-inner-box-one">
@@ -107,13 +105,13 @@ export default function Header() {
                                         </div>
                                     </Link>
                                 </div>
-                                <div className="header-contant-menu-ancer">
+                                <div className="header-contant-menu-ancer" data-aos="fade-right" data-aos-delay="400">
                                     <Link to={"/Pricing"} className={location.pathname === '/Pricing' ? 'active' : ''}>
                                         <p>Pricing</p>
                                         <div className="hover-brd-cls"></div>
                                     </Link>
                                 </div>
-                                <div className="header-contant-menu-ancer">
+                                <div className="header-contant-menu-ancer" data-aos="fade-right" data-aos-delay="500">
                                     <Link to={"/Contact"} className={location.pathname === '/Contact' ? 'active' : ''}>
                                         <p>Contact Us</p>
                                         <div className="hover-brd-cls"></div>
@@ -124,6 +122,7 @@ export default function Header() {
                     </div>
                 </div>
             </header>
+
 
 
 

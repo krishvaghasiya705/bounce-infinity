@@ -1,0 +1,107 @@
+* {
+    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+.battery-section-main {
+    margin: 100px 0;
+
+    .container-battery {
+        max-width: 1174px;
+        margin: 0 auto;
+        padding: 0 20px;
+
+        .portable-battery-title-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 0 60px 0;
+
+            h4 {
+                color: #282828;
+                font-size: 34px;
+                font-weight: 700;
+                font-family: "Montserrat", sans-serif;
+                padding: 0 0 10px 0;
+                border-bottom: 4px solid #FF0A0F;
+            }
+        }
+
+        .charge-pera-box-main-flex {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            align-items: center;
+            gap: 77px;
+
+            @media (max-width:950px) {
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+            }
+
+            .charge-pera-box-one {
+                width: 100%;
+                text-align: left;
+
+                @media (max-width:950px) {
+                    text-align: center;
+                }
+
+                h5 {
+                    margin: 0 0 15px 0;
+                    color: #282828;
+                    font-size: 30px;
+                    font-weight: 700;
+                    font-family: "Montserrat", sans-serif;
+                    max-width: 414px;
+
+                    @media (max-width:950px) {
+                        max-width: 100%;
+                    }
+                }
+
+                p {
+                    color: #6c6c6c;
+                    font-size: 18px;
+                    font-weight: 400;
+                    font-family: "Montserrat", sans-serif;
+                    max-width: 636px;
+                    line-height: 28px;
+
+                    @media (max-width:950px) {
+                        max-width: 100%;
+                    }
+                }
+            }
+
+            .charge-pera-box-two {
+
+                img {
+                    width: 100%;
+
+                }
+            }
+        }
+    }
+}
