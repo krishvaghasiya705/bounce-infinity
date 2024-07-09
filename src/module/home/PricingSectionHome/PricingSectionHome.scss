@@ -23,6 +23,7 @@ p {
 }
 
 .pricing-section-main {
+    overflow: hidden;
     margin: 100px 0;
     background: linear-gradient(0deg, #FFF1EB 0%, #ACE0F9 100%);
     display: grid;
